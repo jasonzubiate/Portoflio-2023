@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Tusker Grotesk";
+  src: local("TuskerGrotesk-3600Semibold"),
+    url("../fonts/TuskerGrotesk/TuskerGrotesk-3600Semibold.ttf")
+      format("truetype");
+}
+
+:root {
+  --FFPRIMARY: "Neue Montreal" sans-serif;
+  --TRANSTION: cubic-bezier(0.13, 0.53, 0.38, 0.97);
+  --BLACK: #080808;
+  --SMOKEWHITE: #dddad8;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+body, main {
+  font-family: var(--FFPRIMARY);
+  background-color: var(--BLACK);
+  transition: any 500ms var(--TRANSTION);
+}
+
+main {
+  height: 100vh;
+  background-color: var(--SMOKEWHITE);
+  z-index: 2;
+  overflow-x: hidden;
+}
+
+.shifted-main {
+  transform: translateY(-50%);
+  overflow-y: hidden;
+}
