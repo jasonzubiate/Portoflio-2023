@@ -1,0 +1,28 @@
+#about .section-header .header-item {
+  width: 25%;
+}
+#about .content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  gap: 4rem;
+}
+#about .content h4 {
+  margin-bottom: .5rem;
+  font-weight: 500;
+}
+#about .content .img {
+  width: 48%;
+  margin: 2rem 0;
+  height: 380px;
+  object-fit: cover;
+}
+.hobbies-description{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  align-items: flex-end;
+}
+.hobbies-description .text {
+  width: 70%;
+}
