@@ -1,0 +1,33 @@
+#self .section-header .header-item {
+  width: 25%;
+}
+#self .content {
+  display: flex;
+  flex-direction: column;
+  gap: 144px;
+  width: 75%;
+  align-self: flex-end;
+}
+.content .bio-top{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.content .bio-bottom{
+  display: flex;
+  justify-content: space-between;
+  width: 77%;
+}
+.bio-bottom .tagline {
+  font-family: var(--FFSECONDARY);
+  width: 30%;
+}
+.bio-bottom .bio {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  line-height: 1.32;
+  width: 55%;
+}
+
+

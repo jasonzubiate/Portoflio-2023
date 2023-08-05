@@ -1,9 +1,12 @@
-import Image from 'next/image'
+import { Hero, Projects, Self, Skills } from "@/components";
 
 export default function Home() {
   return (
     <main>
-      home
+      <Hero />
+      <Self />
+      <Skills />
+      <Projects/>
     </main>
-  )
+  );
 }

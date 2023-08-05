@@ -1,0 +1,36 @@
+#skills .section-header .header-item {
+  width: 25%;
+}
+#skills .content {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+#skills .content .tagline {
+  font-family: var(--FFSECONDARY);
+  width: 35%;
+}
+#skills .content .content-right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 50%;
+  align-items: flex-end;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.skills .skill {
+  display: flex;
+  justify-content: space-between;
+  width: 757px;
+  width: 100%;
+}
+.skill .skill-type {
+  white-space: nowrap;
+}
+.skill .skill-list {
+  width: 70%;
+}

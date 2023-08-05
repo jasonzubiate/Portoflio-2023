@@ -1,0 +1,40 @@
+#projects .section-header .header-item {
+  width: 25%;
+}
+#projects .project-container {
+  height: 100%;
+  margin-bottom: 3rem;
+}
+#projects .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.content .project-info {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.project-info .project-title {
+  line-height: 1;
+  text-decoration: underline;
+}
+.project-info .project-other {
+  width: 65%;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.project-description .link {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.project-other .btn-group {
+  display: flex;
+  gap: 8px;
+}
+.content .project-img {
+  width: 50%;
+}

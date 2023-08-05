@@ -1,0 +1,42 @@
+#hero {
+  max-height: 100vh;
+  justify-content: space-between;
+}
+#hero .section-header {
+  margin-left: 25%;
+}
+#hero .section-header .header-item {
+  width: 25%;
+}
+.hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.hero-header .role {
+  width: 30%;
+}
+.hero-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.hero-info .info-left {
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+  align-items: flex-end;
+}
+.arrow {
+  width: 140px;
+  height: auto;
+}
+.info-left .bio {
+  width: 380px;
+}
+.hero-info .name {
+  text-align: right;
+  font-weight: 500;
+  width: 500px;
+}

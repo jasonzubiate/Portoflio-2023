@@ -9,39 +9,77 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 @font-face {
   font-family: "Tusker Grotesk";
   src: local("TuskerGrotesk-3600Semibold"),
     url("../fonts/TuskerGrotesk/TuskerGrotesk-3600Semibold.ttf")
       format("truetype");
 }
-
 :root {
   --FFPRIMARY: "Neue Montreal" sans-serif;
+  --FFSECONDARY: "Tusker Grotesk";
   --TRANSTION: cubic-bezier(0.13, 0.53, 0.38, 0.97);
   --BLACK: #080808;
   --SMOKEWHITE: #dddad8;
 }
-
 .bold {
   font-weight: bold;
 }
-
-body, main {
+body {
   font-family: var(--FFPRIMARY);
   background-color: var(--BLACK);
   transition: any 500ms var(--TRANSTION);
 }
-
 main {
   height: 100vh;
+  margin: 0 auto;
+  padding: 0 4rem;
   background-color: var(--SMOKEWHITE);
   z-index: 2;
   overflow-x: hidden;
+  padding-top: 2.5rem;
 }
-
 .shifted-main {
   transform: translateY(-50%);
   overflow-y: hidden;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rem;
+}
+.text-m {
+  font-size: 22px;
+  line-height: 1.32;
+}
+.text-l {
+  font-size: 40px;
+  line-height: 1.25;
+}
+.text-xl {
+  font-size: 100px;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+.text-2xl {
+  font-size: 128px;
+  letter-spacing: -2.5px;
+  line-height: 90%;
+}
+.text-3xl {
+  font-size: 150px;
+  letter-spacing: -3px;
+  line-height: 1;
+}
+.text-4xl {
+  font-size: 250px;
+  letter-spacing: -5px;
+  line-height: 1;
+  font-family: var(--FFSECONDARY);
+}
+.section-header {
+  display: flex;
+  width: 100%;
+  margin-bottom: 4.5rem;
+  line-height: 1.25;
 }

@@ -1,3 +1,13 @@
 nav {
-  background-color: var(--SMOKEWHITE);
+  background-color: transparent;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
