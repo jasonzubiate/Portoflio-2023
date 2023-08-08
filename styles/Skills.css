@@ -1,3 +1,7 @@
+#skills .section-header {
+  margin-bottom: 5rem;
+}
+
 #skills .section-header .header-item {
   width: 25%;
 }
@@ -33,4 +37,33 @@
 }
 .skill .skill-list {
   width: 70%;
+}
+
+@media screen and (max-width: 1000px) {
+  #skills .section-header {
+    margin-bottom: 3rem;
+  }
+  #skills .content {
+    flex-direction: column;
+    width: 100%;
+  }
+  #skills .content .tagline {
+    width: 70%;
+    margin-bottom: 4rem;
+  }
+  #skills .content .content-right {
+    width: 80%;
+    align-self: flex-end;
+    gap: 2rem;
+  }
+  .skills .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: .5rem;
+  }
+  .skill .skill-list {
+    width: 100%;
+  }
 }

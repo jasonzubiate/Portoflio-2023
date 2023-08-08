@@ -5,6 +5,9 @@
   height: 100%;
   margin-bottom: 3rem;
 }
+#projects .project-container:last-child {
+  margin-bottom: 0;
+}
 #projects .content {
   display: flex;
   justify-content: space-between;
@@ -14,9 +17,11 @@
   width: 35%;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
 }
 .project-info .project-title {
+  display: flex;
+  flex-wrap: wrap;
   line-height: 1;
   text-decoration: underline;
 }
@@ -37,4 +42,26 @@
 }
 .content .project-img {
   width: 50%;
+}
+
+
+@media screen and (max-width: 1000px) {
+  #projects .section-header {
+    margin-bottom: 3rem;
+  }
+  #projects .content {
+   flex-direction: column;
+   gap: 2rem;
+  }
+  .content .project-info {
+    gap: 2rem;
+    width: 100%;
+  }
+  .project-info .project-other {
+    align-self: flex-start;
+    width: 90%;
+  }
+  .content .project-img {
+    width: 100%;
+  }
 }

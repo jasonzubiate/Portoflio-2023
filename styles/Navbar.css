@@ -4,10 +4,24 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 22px;
   margin: 0 auto;
   padding: 0 4rem;
   position: fixed;
   top: 0;
   width: 100%;
+}
+.menu {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  nav {
+    height: 5rem;
+    padding: 0 1.25rem;
+  }
+  .desk-nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
 }

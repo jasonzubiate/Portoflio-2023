@@ -39,3 +39,19 @@
   text-align: right;
   width: 500px;
 }
+
+@media screen and (max-width: 1000px) {
+  #hero .section-header {
+    display: none;
+  }
+  #hero {
+    margin-top: 10rem;
+  }
+  .hero-info {
+    flex-direction: column;
+  }
+  .arrow {
+    width: 100px;
+  }
+    
+}

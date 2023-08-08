@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Jason Zubiate",
+  title: "Jason Zubiate 🤙",
   description: "Perosnal portfolio made with Next.js",
 };
 

@@ -1,4 +1,5 @@
 import "@/styles/Skills.css";
+import CustomButton from "./CustomButton";
 
 function Skills() {
   return (
@@ -40,7 +41,7 @@ function Skills() {
               </p>
             </div>
           </div>
-          <button className="btn-s">Contact me</button>
+          <CustomButton title="Contact Me" textStyles="text-m"/>
         </div>
       </div>
     </section>

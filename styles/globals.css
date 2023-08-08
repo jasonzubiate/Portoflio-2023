@@ -48,6 +48,15 @@ section {
   flex-direction: column;
   margin-bottom: 20rem;
 }
+.section-header {
+  display: flex;
+  width: 100%;
+  margin-bottom: 4.5rem;
+  line-height: 1.25;
+}
+section:last-child {
+  margin-bottom: 4rem;
+}
 .text-m {
   font-size: 22px;
   line-height: 1.32;
@@ -77,10 +86,39 @@ section {
   letter-spacing: -5px;
   line-height: 1;
   font-family: var(--FFSECONDARY);
+  text-transform: uppercase;
 }
-.section-header {
-  display: flex;
-  width: 100%;
-  margin-bottom: 4.5rem;
-  line-height: 1.25;
+
+
+
+@media screen and (max-width: 1000px) {
+  main {
+    padding: 0 1.25rem;
+  }
+  section {
+    margin-bottom: 12rem;
+  }
+  .text-m {
+    font-size: 20px;
+  }
+  .text-l {
+    font-size: 28px;
+  }
+  .text-xl {
+    font-size: 80px;
+  }
+  .text-2xl {
+    font-size: 60px;
+    font-weight: 400;
+  }
+  .text-3xl {
+    font-size: 80px;
+  }
+  .text-4xl {
+    font-size: 100px;
+    letter-spacing: -1px;
+  }
+  /* .section-header {
+    margin-bottom: 10rem;
+  } */
 }

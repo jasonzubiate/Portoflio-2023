@@ -4,6 +4,7 @@ import Self from "./Self";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import About from "./About";
+import Connect from "./Connect";
 
 export {
   Navbar,
@@ -11,5 +12,6 @@ export {
   Self,
   Skills,
   Projects,
-  About
+  About, 
+  Connect
 }

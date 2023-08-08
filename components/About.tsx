@@ -7,7 +7,7 @@ function About() {
     <section id="about">
       <div className="section-header">
         <p className="text-m header-item">04/</p>
-        <h2 className="text-m header-item uppercase">About</h2>
+        <h2 className="text-m header-item uppercase">About Me</h2>
       </div>
       <div className="content">
         <div className="hobbies">
@@ -18,10 +18,10 @@ function About() {
         </div>
         <div className="hobbies-description">
           <p className="text-m text">
-            I value my free time and make the most of it by doing this by
-            practicing my hobbies or spending time with others. I’m either
-            producing new music, enjoying some food, or out with my friends for
-            the majority of the day.
+            I value my free time and make the most of it by practicing my
+            hobbies or spending time with others. I’m either producing new
+            music, enjoying some food, or out with my friends for the majority
+            of the day.
           </p>
           <p className="text-m underline link">More about me</p>
         </div>

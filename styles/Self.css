@@ -8,12 +8,12 @@
   width: 75%;
   align-self: flex-end;
 }
-.content .bio-top{
+.content .bio-top {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
-.content .bio-bottom{
+.content .bio-bottom {
   display: flex;
   justify-content: space-between;
   width: 77%;
@@ -30,4 +30,26 @@
   width: 55%;
 }
 
-
+@media screen and (max-width: 1000px) {
+  #self .section-header {
+    margin-bottom: 3rem;
+  }
+  #self .content {
+    width: 100%;
+    gap: 3rem;
+  }
+  .content .bio-top {
+    gap: 2rem;
+  }
+  .content .bio-bottom {
+    flex-direction: column;
+    width: 100%;
+  }
+  .bio-bottom .tagline {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .bio-bottom .bio {
+    width: 100%;
+  }
+}

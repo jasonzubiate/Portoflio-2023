@@ -1,0 +1,23 @@
+.custom-btn {
+  border: 1px solid var(--BLACK);
+  border-radius: 50px;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  overflow: hidden;
+}
+.custom-btn:hover .marquee {
+  animation: marquee-effect 2s linear infinite;
+}
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+}
+@keyframes marquee-effect {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
