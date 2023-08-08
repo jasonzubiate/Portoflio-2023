@@ -7,7 +7,7 @@ import CustomButton from "./CustomButton";
 function Connect() {
   const emailRedirect = () => {
     const emailAddress = "jzubiate.dev@gmail.com";
-    const subject = "Would ove to connect!";
+    const subject = "🤙 I am looking for a Frontend Engineer. Let's talk";
 
     const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(
       subject
@@ -35,46 +35,46 @@ function Connect() {
               <div className="btn-row">
                 <CustomButton
                   title="Frontend development"
-                  textStyles="text-[28px]"
+                  textStyles="text-m xl:text-[28px]"
                   handleClick={emailRedirect}
                 />
                 <CustomButton
                   title="UX/UI Design"
-                  textStyles="text-[28px]"
+                  textStyles="text-m xl:text-[28px]"
                   handleClick={emailRedirect}
                 />
               </div>
               <div className="btn-row">
                 <CustomButton
                   title="UX Research"
-                  textStyles="text-[28px]"
+                  textStyles="text-m xl:text-[28px]"
                   handleClick={emailRedirect}
                 />
                 <CustomButton
                   title="Webflow Development"
-                  textStyles="text-[28px]"
+                  textStyles="text-m xl:text-[28px]"
                   handleClick={emailRedirect}
                 />
                 <CustomButton
                   title="Startups"
-                  textStyles="text-[28px]"
+                  textStyles="text-m xl:text-[28px]"
                   handleClick={emailRedirect}
                 />
               </div>
               <div className="btn-row">
                 <CustomButton
                   title="New Businesses"
-                  textStyles="text-[28px]"
+                  textStyles="text-m xl:text-[28px]"
                   handleClick={emailRedirect}
                 />
                 <CustomButton
                   title="Producing"
-                  textStyles="text-[28px]"
+                  textStyles="text-m xl:text-[28px]"
                   handleClick={emailRedirect}
                 />
                 <CustomButton
                   title="Lunch"
-                  textStyles="text-[28px]"
+                  textStyles="text-m xl:text-[28px]"
                   handleClick={emailRedirect}
                 />
               </div>

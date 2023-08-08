@@ -14,10 +14,10 @@
   width: 100%;
 }
 .content .project-info {
-  width: 35%;
+  width: 40%;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 5rem;
 }
 .project-info .project-title {
   display: flex;
@@ -26,11 +26,11 @@
   text-decoration: underline;
 }
 .project-info .project-other {
-  width: 65%;
-  align-self: flex-end;
+  width: 70%;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-left: 20%;
 }
 .project-description .link {
   font-weight: 700;
@@ -60,6 +60,7 @@
   .project-info .project-other {
     align-self: flex-start;
     width: 90%;
+    margin: 0;
   }
   .content .project-img {
     width: 100%;

@@ -20,11 +20,11 @@
 .hobbies-description {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 60%;
   align-items: flex-end;
 }
 .hobbies-description .text {
-  width: 70%;
+  width: 60%;
 }
 
 @media screen and (max-width: 1000px) {

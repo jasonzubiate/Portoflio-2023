@@ -27,7 +27,7 @@ function Skills() {
               </label>
               <p className="text-m skill-list">
                 React, react native, next.js, angular, jest, cypress, gsap,
-                redux, recoil, firma, miro, maze, testflight
+                redux, recoil, figma, miro, maze, testflight
               </p>
             </div>
             <div className="skill">

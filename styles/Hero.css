@@ -1,5 +1,5 @@
 #hero {
-  max-height: 100vh;
+  max-height: 95vh;
   justify-content: space-between;
 }
 #hero .section-header {
@@ -15,6 +15,8 @@
 }
 .hero-header .role {
   width: 30%;
+  position: relative;
+  left: -7px;
 }
 .hero-info {
   width: 100%;
@@ -29,15 +31,29 @@
   align-items: flex-end;
 }
 .arrow {
-  width: 140px;
+  width: 110px;
   height: auto;
 }
 .info-left .bio {
-  width: 380px;
+  width: 450px;
+  line-height: 1.18;
 }
 .hero-info .name {
   text-align: right;
-  width: 500px;
+  width: 550px;
+}
+
+@media screen and (max-width: 1320px) {
+  .arrow {
+    width: 100px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1230px) {
+  .arrow {
+    width: 80px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 1000px) {

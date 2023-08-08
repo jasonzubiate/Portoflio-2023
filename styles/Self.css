@@ -30,6 +30,7 @@
   width: 55%;
 }
 
+
 @media screen and (max-width: 1000px) {
   #self .section-header {
     margin-bottom: 3rem;
@@ -47,7 +48,7 @@
   }
   .bio-bottom .tagline {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   .bio-bottom .bio {
     width: 100%;
