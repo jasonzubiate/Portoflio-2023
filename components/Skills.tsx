@@ -1,15 +1,19 @@
 import "@/styles/Skills.css";
 import CustomButton from "./CustomButton";
+import { SectionHeader } from ".";
 
-function Skills() {
+interface Props {
+  section: number;
+}
+
+function Skills({ section }: Props) {
   return (
     <section id="skills">
-      <div className="section-header uppercase">
-        <p className="text-m header-item">02/</p>
-        <h2 className="text-m header-item">Skills</h2>
-      </div>
+      <SectionHeader number={section} title="Skills" />
       <div className="content">
-        <h3 className="text-3xl tagline uppercase">What i bring to the table</h3>
+        <h3 className="text-3xl tagline uppercase">
+          What i bring to the table
+        </h3>
         <div className="content-right">
           <div className="skills uppercase">
             <div className="skill">
@@ -41,7 +45,7 @@ function Skills() {
               </p>
             </div>
           </div>
-          <CustomButton title="Contact Me" textStyles="text-m"/>
+          <CustomButton title="Contact Me" textStyles="text-m" />
         </div>
       </div>
     </section>

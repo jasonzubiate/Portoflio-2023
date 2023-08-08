@@ -1,14 +1,16 @@
 import "@/styles/About.css";
 import Image from "next/image";
 import ableton from "@/public/assets/img/ableton.jpg";
+import { SectionHeader } from ".";
 
-function About() {
+interface Props {
+  section: number;
+}
+
+function About({ section }: Props) {
   return (
     <section id="about">
-      <div className="section-header">
-        <p className="text-m header-item">04/</p>
-        <h2 className="text-m header-item uppercase">About Me</h2>
-      </div>
+      <SectionHeader number={section} title="About Me" />
       <div className="content">
         <div className="hobbies">
           <h4 className="text-2xl uppercase">Producing,</h4>

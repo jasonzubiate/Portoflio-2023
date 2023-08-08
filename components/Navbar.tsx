@@ -8,9 +8,9 @@ function Navbar() {
 
       {/* Desktop Navigation */}
       <span className="desk-nav">
-        <Link className="text-m" href="./">Work,{" "}</Link>
-        <Link className="text-m" href="./">About,{" "}</Link>
-        <Link className="text-m" href="./">Contact</Link>
+        <Link className="text-m" href="/">Work,{" "}</Link>
+        <Link className="text-m" href="/about">About,{" "}</Link>
+        <Link className="text-m" href="/contact">Contact</Link>
       </span>
 
       {/* Mobile Navigation */}

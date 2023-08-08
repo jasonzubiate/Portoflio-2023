@@ -48,14 +48,9 @@ section {
   flex-direction: column;
   margin-bottom: 20rem;
 }
-.section-header {
-  display: flex;
-  width: 100%;
-  margin-bottom: 4.5rem;
-  line-height: 1.25;
-}
+
 section:last-child {
-  margin-bottom: 4rem;
+  margin-bottom: 0;
 }
 .text-m {
   font-size: 22px;

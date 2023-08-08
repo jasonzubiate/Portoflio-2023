@@ -2,10 +2,14 @@
   max-height: 95vh;
   justify-content: space-between;
 }
-#hero .section-header {
+#hero .header {
+  display: flex;
+  width: 100%;
+  line-height: 1.25;
+  margin-bottom: 4.5rem;
   margin-left: 25%;
 }
-#hero .section-header .header-item {
+#hero .header .header-item {
   width: 25%;
 }
 .hero-header {
@@ -57,7 +61,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  #hero .section-header {
+  #hero .header {
     display: none;
   }
   #hero {

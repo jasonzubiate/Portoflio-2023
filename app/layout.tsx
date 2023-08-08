@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 import type { Metadata } from "next";
-import Navbar from "@/components/Navbar";
+import { Navbar } from "@/components";
 
 export const metadata: Metadata = {
   title: "Jason Zubiate 🤙",

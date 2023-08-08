@@ -1,12 +1,14 @@
 import "@/styles/Self.css";
+import { SectionHeader } from ".";
 
-function Self() {
+interface Props {
+  section: number;
+}
+
+function Self({ section }: Props) {
   return (
     <section id="self">
-      <div className="section-header uppercase">
-        <p className="text-m header-item">01/</p>
-        <h2 className="text-m header-item">Self</h2>
-      </div>
+      <SectionHeader number={section} title="Self" />
       <div className="content">
         <div className="bio-top">
           <p className="text-l uppercase">

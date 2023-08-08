@@ -1,17 +1,19 @@
-"use client"
+"use client";
 
 import "@/styles/Projects.css";
 import Image from "next/image";
 import splashhouse from "@/public/assets/img/splashhouse.jpg";
 import CustomButton from "./CustomButton";
+import { SectionHeader } from ".";
 
-function Projects() {
+interface Props {
+  section: number;
+}
+
+function Projects({ section }: Props) {
   return (
     <section id="projects">
-      <div className="section-header uppercase">
-        <p className="text-m header-item">03/</p>
-        <h2 className="text-m header-item">Projects</h2>
-      </div>
+      <SectionHeader number={section} title="Projects" />
       <div className="project-container">
         <div className="content">
           <div className="project-info">
@@ -28,8 +30,21 @@ function Projects() {
                 <span className="link">gsap</span> for animiations.
               </p>
               <div className="btn-group">
-              <CustomButton title="Live Demo" textStyles="text-m" handleClick={() => window.location.href="https://www.jasonzubiate.com"}/>
-              <CustomButton title="Github" textStyles="text-m" handleClick={() => window.location.href="https://github.com/jasonzubiate/portfolio2023"}/>
+                <CustomButton
+                  title="Live Demo"
+                  textStyles="text-m"
+                  handleClick={() =>
+                    (window.location.href = "https://www.jasonzubiate.com")
+                  }
+                />
+                <CustomButton
+                  title="Github"
+                  textStyles="text-m"
+                  handleClick={() =>
+                    (window.location.href =
+                      "https://github.com/jasonzubiate/portfolio2023")
+                  }
+                />
               </div>
             </div>
           </div>
@@ -41,7 +56,10 @@ function Projects() {
       <div className="project-container">
         <div className="content">
           <div className="project-info">
-            <h3 className="text-2xl project-title uppercase"><span>PromptS</span><span>hare</span></h3>
+            <h3 className="text-2xl project-title uppercase">
+              <span>PromptS</span>
+              <span>hare</span>
+            </h3>
             <div className="project-other">
               <p className="text-m project-description uppercase">
                 A CRUD web application to allow users to create and share
@@ -54,8 +72,22 @@ function Projects() {
                 <span className="link">Tailwind CSS</span> .
               </p>
               <div className="btn-group">
-              <CustomButton title="Live Demo" textStyles="text-m" handleClick={() => window.location.href="https://prompt-share-one.vercel.app"}/>
-              <CustomButton title="Github" textStyles="text-m" handleClick={() => window.location.href="https://github.com/jasonzubiate/PromptShare"}/>
+                <CustomButton
+                  title="Live Demo"
+                  textStyles="text-m"
+                  handleClick={() =>
+                    (window.location.href =
+                      "https://prompt-share-one.vercel.app")
+                  }
+                />
+                <CustomButton
+                  title="Github"
+                  textStyles="text-m"
+                  handleClick={() =>
+                    (window.location.href =
+                      "https://github.com/jasonzubiate/PromptShare")
+                  }
+                />
               </div>
             </div>
           </div>
@@ -78,8 +110,20 @@ function Projects() {
                 <span className="link">gsap</span> for animiations.
               </p>
               <div className="btn-group">
-              <CustomButton title="Live Demo" textStyles="text-m" handleClick={() => window.location.href="https://www.jasonzubiate.com"}/>
-              <CustomButton title="Github" textStyles="text-m" handleClick={() => window.location.href="https://www.jasonzubiate.com"}/>
+                <CustomButton
+                  title="Live Demo"
+                  textStyles="text-m"
+                  handleClick={() =>
+                    (window.location.href = "https://www.jasonzubiate.com")
+                  }
+                />
+                <CustomButton
+                  title="Github"
+                  textStyles="text-m"
+                  handleClick={() =>
+                    (window.location.href = "https://www.jasonzubiate.com")
+                  }
+                />
               </div>
             </div>
           </div>
