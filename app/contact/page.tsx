@@ -1,3 +1,5 @@
+"use client";
+
 import { fetchLocalWeather } from "@/utils";
 import "@/styles/ContactPage.css";
 import { Footer } from "@/components";
@@ -16,6 +18,17 @@ export default async function page() {
     weatherIcon = "🌧️"; // Rainy
   }
 
+  const emailRedirect = () => {
+    const emailAddress = "jzubiate.dev@gmail.com";
+    const subject = "🤙 I am looking for a Frontend Engineer. Let's talk";
+
+    const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(
+      subject
+    )}`;
+
+    window.location.href = mailtoUrl;
+  };
+
   return (
     <main id="contact">
       <div className="section-header">
@@ -31,7 +44,12 @@ export default async function page() {
       <div className="content">
         <div className="cta-group">
           <h4 className="text-m catchline">Send me a message</h4>
-          <h1 className="text-2xl link">jzubiate.dev@gmail.com</h1>
+          <button
+            className="text-2xl link"
+            onClick={emailRedirect}
+          >
+            jzubiate.dev@gmail.com
+          </button>
         </div>
         <div className="cta-group">
           <h4 className="text-m catchline">Or connect with me elsewhere</h4>

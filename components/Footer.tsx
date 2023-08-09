@@ -1,6 +1,6 @@
 "use client";
 
-import "@/styles/Footer.css"
+import "@/styles/Footer.css";
 
 function Footer() {
   return (
@@ -13,29 +13,37 @@ function Footer() {
         <div className="socials">
           <span>
             <a
-              className="text-m"
+              className="text-m hover-link"
               href="https://www.linkedin.com/in/jasonzubiate/"
             >
-              LinkedIn,{" "}
+              LinkedIn
             </a>
+            ,{" "}
             <a
-              className="text-m"
+              className="text-m hover-link"
               href="https://github.com/jasonzubiate?tab=repositories"
             >
-              Github,{" "}
+              Github
             </a>
-            <a className="text-m" href="https://dribbble.com/jasonzubiate">
+            ,{" "}
+            <a
+              className="text-m hover-link"
+              href="https://dribbble.com/jasonzubiate"
+            >
               Dribbble
             </a>
           </span>
         </div>
       </div>
       <div className="footer-right">
-        <a className="text-m" href="https://dribbble.com/jasonzubiate">
+        <a
+          className="text-m hover-link"
+          href="https://dribbble.com/jasonzubiate"
+        >
           v1
         </a>
         <button
-          className="text-m"
+          className="text-m hover-link"
           onClick={() =>
             window.scrollTo({
               top: 0,

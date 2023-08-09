@@ -18,7 +18,7 @@ export default async function page() {
   } else if (rainIntensity > 0) {
     weatherIcon = "🌧️"; // Rainy
   }
-
+  
   return (
     <main id="about-page">
       <section id="jason">
