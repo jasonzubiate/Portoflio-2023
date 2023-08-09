@@ -18,9 +18,9 @@ export default async function page() {
   } else if (rainIntensity > 0) {
     weatherIcon = "🌧️"; // Rainy
   }
-  
+
   return (
-    <main id="about-page">
+    <div id="about-page">
       <section id="jason">
         <div className="header">
           <div className="header-item">
@@ -69,8 +69,8 @@ export default async function page() {
           </div>
         </div>
       </section>
-      <Connect section={2}/>
-      <Footer/>
-    </main>
+      <Connect section={2} />
+      <Footer />
+    </div>
   );
 }

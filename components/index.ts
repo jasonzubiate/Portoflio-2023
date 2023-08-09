@@ -7,9 +7,11 @@ import Projects from "./Projects";
 import About from "./About";
 import Connect from "./Connect";
 import Footer from "./Footer";
+import NavToggle from "./NavToggle";
 
 export {
   Navbar,
+  NavToggle,
   SectionHeader,
   Hero,
   Self,

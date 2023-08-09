@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Navbar } from "@/components";
+import NavLayout from "@/components/NavLayout";
 
 export const metadata: Metadata = {
   title: "Jason Zubiate 🤙",
@@ -16,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        {children}
+        <NavLayout children={children}/>
       </body>
     </html>
   );

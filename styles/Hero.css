@@ -64,14 +64,41 @@
   #hero .header {
     display: none;
   }
+  .hero-header .role {
+    left: -2px;
+  }
   #hero {
-    margin-top: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    height: 100vh;
+    justify-content: flex-start;
   }
   .hero-info {
+    justify-content: space-between;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
   }
   .arrow {
     width: 100px;
+  }
+  .hero-info .info-left {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-top: 2rem;
+  }
+  .hero-info .info-right {
+    display: flex;
+    align-items: flex-end;
+  }
+  .hero-info .name {
+    width: 100%;
+  }
+  .info-left .bio {
+    width: 70%;
+  }
+  .arrow {
+    width: 56px;
   }
     
 }

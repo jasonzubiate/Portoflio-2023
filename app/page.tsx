@@ -14,7 +14,7 @@ export default async function Home() {
     weatherIcon = '🌧️'; // Rainy
   }
   return (
-    <main>
+    <div>
       <Hero temperature={Math.round(temperature)} weatherIcon={weatherIcon}/>
       <Self section={1}/>
       <Skills section={2}/>
@@ -22,6 +22,6 @@ export default async function Home() {
       <About section={4}/>
       <Connect section={5}/>
       <Footer/>
-    </main>
+    </div>
   );
 }

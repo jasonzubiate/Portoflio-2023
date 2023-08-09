@@ -1,0 +1,79 @@
+#nav-toggle {
+  height: 5rem;
+  width: 5rem;
+  position: fixed;
+  z-index: 19;
+  left: 50%;
+  bottom: -6rem;
+  transform: translateX(-50%);
+  background-color: #ff8635;
+  border: none;
+  border-radius: 5rem;
+  outline: none;
+  box-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 35%);
+  cursor: pointer;
+  transition: transform, background-color;
+  transition-timing-function: ease;
+  transition-duration: 400ms;
+  animation: slide-in-bottom 1.5s 2s var(--TRANSITION) forwards;
+}
+#nav-toggle:hover {
+  transform: translateX(-50%) scale(1.05);
+}
+#nav-toggle:active {
+  transform: translateX(-50%) scale(0.95);
+}
+#nav-toggle > i {
+  font-size: 3rem;
+  position: absolute;
+  left: 50%;
+  top: 54%;
+  transform: translate(-50%, -55%) scale(0.9);
+  opacity: 0;
+  transition: transform, opacity;
+  transition-timing-function: var(--TRANSITION);
+  transition-duration: 400ms;
+}
+#nav-toggle > .open,
+#nav-toggle > .close {
+  opacity: 1;
+  transform: translate(-50%, -55%) scale(1);
+}
+@keyframes slide-in-bottom {
+	0% {
+		bottom: -6rem;
+	}
+	50% {
+		bottom: 3.5rem;
+	}
+	80% {
+		bottom: 2.8rem;
+	}
+	100% {
+		bottom: 3rem;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+  #nav-toggle {
+    width: 4rem;
+    height: 4rem;
+  }
+  #nav-toggle > i {
+    font-size: 2.5rem;
+  }
+  @keyframes slide-in-bottom {
+    0% {
+      bottom: -6rem;
+    }
+    50% {
+      bottom: 2.5rem;
+    }
+    80% {
+      bottom: 1.8rem;
+    }
+    100% {
+      bottom: 2rem;
+    }
+  }
+}

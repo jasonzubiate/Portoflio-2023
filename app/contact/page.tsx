@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import { fetchLocalWeather } from "@/utils";
 import "@/styles/ContactPage.css";
@@ -10,7 +10,7 @@ export default async function page() {
     weather.timelines.minutely[0]?.values;
 
   let weatherIcon = "";
-  if (temperature > 70 && cloudCover < 3 && rainIntensity === 0) {
+  if (temperature > 70) {
     weatherIcon = "☀️"; // Sunny
   } else if (cloudCover > 3) {
     weatherIcon = "☁️"; // Cloudy
@@ -18,26 +18,26 @@ export default async function page() {
     weatherIcon = "🌧️"; // Rainy
   }
 
-  const emailRedirect = () => {
-    const emailAddress = "jzubiate.dev@gmail.com";
-    const subject = "🤙 I am looking for a Frontend Engineer. Let's talk";
+  // const emailRedirect = () => {
+  //   const emailAddress = "jzubiate.dev@gmail.com";
+  //   const subject = "🤙 I am looking for a Frontend Engineer. Let's talk";
 
-    const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(
-      subject
-    )}`;
+  //   const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(
+  //     subject
+  //   )}`;
 
-    window.location.href = mailtoUrl;
-  };
+  //   window.location.href = mailtoUrl;
+  // };
 
   return (
-    <main id="contact">
+    <div id="contact">
       <div className="section-header">
         <div className="header-item">
           <p className="text-m w-[200px]">Recent UCI Graduate</p>
         </div>
         <div className="header-item">
           <p className="text-m w-[200px]">
-            {temperature}ºF {weatherIcon} Los Angeles 10:16 PM
+          {Math.round(temperature)}ºF {weatherIcon} Los Angeles 10:16 PM
           </p>
         </div>
       </div>
@@ -46,7 +46,7 @@ export default async function page() {
           <h4 className="text-m catchline">Send me a message</h4>
           <button
             className="text-2xl link"
-            onClick={emailRedirect}
+            // onClick={emailRedirect}
           >
             jzubiate.dev@gmail.com
           </button>
@@ -76,6 +76,6 @@ export default async function page() {
         </div>
       </div>
       <Footer />
-    </main>
+    </div>
   );
 }

@@ -18,7 +18,7 @@
 :root {
   --FFPRIMARY: "Neue Montreal" sans-serif;
   --FFSECONDARY: "Tusker Grotesk";
-  --TRANSTION: cubic-bezier(0.13, 0.53, 0.38, 0.97);
+  --TRANSITION: cubic-bezier(0.13, 0.53, 0.38, 0.97);
   --BLACK: #080808;
   --SMOKEWHITE: #dddad8;
 }
@@ -28,7 +28,6 @@
 body {
   font-family: var(--FFPRIMARY);
   background-color: var(--BLACK);
-  transition: any 500ms var(--TRANSTION);
 }
 main {
   height: 100vh;
@@ -38,6 +37,7 @@ main {
   z-index: 2;
   overflow-x: hidden;
   padding-top: 2.5rem;
+  transition: transform 500ms var(--TRANSITION);
 }
 .shifted-main {
   transform: translateY(-50%);
