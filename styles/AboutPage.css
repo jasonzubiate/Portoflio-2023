@@ -48,13 +48,13 @@
 }
 
 @media screen and (max-width: 1000px) {
-  #jason .section-header {
+  #jason .header {
     display: none;
   }
-  #jason .section-header .header-item:nth-child(2) {
+  #jason .header .header-item:nth-child(2) {
     width: 35%;
   }
-  #jason .content .section-header {
+  #jason .content .header {
     display: flex;
     margin-bottom: 3rem;
   }

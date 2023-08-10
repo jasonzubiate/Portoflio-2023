@@ -25,16 +25,19 @@
 .bold {
   font-weight: bold;
 }
-body {
-  font-family: var(--FFPRIMARY);
-  background-color: var(--BLACK);
-}
+body,
 main {
   height: 100vh;
-  margin: 0 auto;
-  padding: 0 4rem;
+  width: 100vw;
+  background-color: var(--BLACK);
+  font-family: var(--FFPRIMARY);
+}
+main {
   background-color: var(--SMOKEWHITE);
+  position: relative;
+  padding: 0 4rem;
   z-index: 2;
+  overflow-y: auto;
   overflow-x: hidden;
   padding-top: 2.5rem;
   transition: transform 500ms var(--TRANSITION);
@@ -87,7 +90,7 @@ section:last-child {
   position: relative;
 }
 .hover-link::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);

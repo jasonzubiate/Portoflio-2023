@@ -1,3 +1,4 @@
+import NavCarousel from "./NavCarousel";
 import Navbar from "./Navbar";
 import SectionHeader from "./SectionHeader";
 import Hero from "./Hero";
@@ -12,12 +13,13 @@ import NavToggle from "./NavToggle";
 export {
   Navbar,
   NavToggle,
+  NavCarousel,
   SectionHeader,
   Hero,
   Self,
   Skills,
   Projects,
-  About, 
+  About,
   Connect,
-  Footer
-}
+  Footer,
+};

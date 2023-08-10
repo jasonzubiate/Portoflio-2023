@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { NavToggle, Navbar } from ".";
+import { NavToggle, NavCarousel } from ".";
+
+import { Navbar } from "@/components";
 
 interface NavLayoutProps {
   children: any;
@@ -12,7 +14,9 @@ function NavLayout({ children }: NavLayoutProps) {
 
   return (
     <>
+      <Navbar />
       <main className={`${navToggle ? "shifted-main" : ""}`}>{children}</main>
+      <NavCarousel navToggle={navToggle} setNavToggle={setNavToggle} />
       <NavToggle toggle={navToggle} setToggle={setNavToggle} />
     </>
   );
