@@ -24,13 +24,13 @@ function Connect({ section }: Props) {
       <SectionHeader number={section} title="Want to work together?" />
       <div className="content">
         <div className="connect-body">
-          <h2 className="text-4xl">Let's Connect</h2>
+          <h2 className="text-4xl">Let&apos;s Connect</h2>
           <div className="services">
             <label
               htmlFor="Services"
               className="services-label text-[28px] uppercase"
             >
-              I'm always intersted in
+              I&apos;m always intersted in
             </label>
             <div className="btn-group">
               <div className="btn-row">

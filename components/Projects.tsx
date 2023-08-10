@@ -64,7 +64,7 @@ function Projects({ section }: Props) {
               <p className="text-m project-description uppercase">
                 A CRUD web application to allow users to create and share
                 helpful AI prompts to obtian the best responses from ai chat
-                models such as chatgpt. It's built with{" "}
+                models such as chatgpt. It&apos;s built with{" "}
                 <span className="link">react</span> &{" "}
                 <span className="link">next.js</span> and connects to a{" "}
                 <span className="link">mongodb</span> server to store user

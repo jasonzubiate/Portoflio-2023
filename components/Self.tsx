@@ -17,7 +17,7 @@ function Self({ section }: Props) {
             design.
           </p>
           <p className="text-l uppercase">
-            When I'm not creating. I am producing, visiting the beach, or having
+            When I&apos;m not creating. I am producing, visiting the beach, or having
             a fun night out with friends.
           </p>
         </div>

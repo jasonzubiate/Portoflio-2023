@@ -58,6 +58,7 @@ function NavCarousel({ navToggle, setNavToggle }: NavCarouselProps) {
       >
         {currentPage.map((page: any) => (
           <NavCard
+            key={page.name}
             linkName={page.name}
             linkImage={width > 640 ? page.image : page.mobileImage}
             setNavToggle={setNavToggle}
