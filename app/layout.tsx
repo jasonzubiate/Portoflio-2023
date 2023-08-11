@@ -13,5 +13,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <NavLayout>{children}</NavLayout>;
+  return (
+    <html lang="en">
+      <body>
+        <NavLayout>
+          {children}
+        </NavLayout>
+      </body>
+    </html>
+  );
 }
