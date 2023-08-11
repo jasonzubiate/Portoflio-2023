@@ -25,14 +25,12 @@
 .bold {
   font-weight: bold;
 }
-html {
-  background-color: var(--SMOKEWHITE);
-}
+
 body,
 main {
   height: 100vh;
   width: 100vw;
-  background-color: var(--BLACK);
+  background-color: var(--SMOKEWHITE);
   font-family: var(--FFPRIMARY);
 }
 main {
