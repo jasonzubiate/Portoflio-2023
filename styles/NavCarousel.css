@@ -33,11 +33,6 @@
 		justify-content: flex-start;
 	}
 }
-@media screen and (max-width: 1230px) {
-	#nav-carousel {
-		height: 45vh;
-	}
-}
 @media screen and (max-width: 766px) {
 	.navcards {
 		gap: clamp(1rem, 2vw, 2rem);
