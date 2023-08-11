@@ -31,7 +31,7 @@ export default async function page() {
 
   return (
     <div id="contact-page">
-      <section className="contact-landing">
+      <section id="contact-landing">
         <div className="page-header">
           <div className="header-item">
             <p className="text-m w-[200px]">Recent UCI Graduate</p>
