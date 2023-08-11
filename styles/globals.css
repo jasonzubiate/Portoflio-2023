@@ -25,6 +25,9 @@
 .bold {
   font-weight: bold;
 }
+html {
+  background-color: var(--SMOKEWHITE);
+}
 body,
 main {
   height: 100vh;
@@ -118,7 +121,7 @@ section:last-child {
 }
 @media screen and (max-width: 1230px) {
   .shifted-main {
-    transform: translateY(-60%);
+    transform: translateY(-57%);
     overflow-y: hidden;
   }
   .text-l {
