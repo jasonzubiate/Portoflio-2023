@@ -25,7 +25,9 @@
 .bold {
   font-weight: bold;
 }
-
+body {
+  overflow: hidden;
+}
 body,
 main {
   height: 100vh;
