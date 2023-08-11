@@ -1,4 +1,4 @@
-#contact-page .content {
+#contact-landing .content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -33,7 +33,7 @@
   }
 }
 @media screen and (max-width: 1000px) {
-  #contact .content {
+  #contact-landing .content {
     gap: 8rem;
   }
   .cta-group {
