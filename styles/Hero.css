@@ -69,6 +69,7 @@
     left: -2px;
   }
   #hero {
+    max-height: 90vh;
     padding-top: 8rem;
     height: 100vh;
     justify-content: flex-start;
