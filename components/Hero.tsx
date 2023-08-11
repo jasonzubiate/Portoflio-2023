@@ -42,7 +42,6 @@ function Hero({ temperature, weatherIcon }: HeroProps) {
   return (
     <section id="hero">
       <PageHeader />
-
       <div className="hero-header uppercase">
         <p className="text-m ">Creative</p>
         <h2 className="text-4xl role reveal-type">Frontend Engineer</h2>

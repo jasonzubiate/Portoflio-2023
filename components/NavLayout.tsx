@@ -16,8 +16,8 @@ function NavLayout({ children }: NavLayoutProps) {
 
   return (
     <html>
-      <AnimatePresence initial={false} mode="wait">
-        <motion.body key={pathname}>
+      {/* <AnimatePresence initial={false} mode="wait"> */}
+        <body >
           <div className="bg-black">
             <Navbar />
             <main className={`${navToggle ? "shifted-main" : ""}`}>
@@ -26,22 +26,22 @@ function NavLayout({ children }: NavLayoutProps) {
             <NavCarousel navToggle={navToggle} setNavToggle={setNavToggle} />
             <NavToggle toggle={navToggle} setToggle={setNavToggle} />
           </div>
-          <motion.div
+          {/* <motion.div
             className="slide-in"
             initial={{ scaleY: 0 }}
             animate={{ scaleY: 0 }}
             exit={{ scaleY: 1 }}
             transition={{ duration: 1, ease: [0.13, 0.53, 0.38, 0.97] }}
-          ></motion.div>
-          <motion.div
+          ></motion.div> */}
+          {/* <motion.div
             className="slide-out"
             initial={{ scaleY: 1 }}
             animate={{ scaleY: 0 }}
             exit={{ scaleY: 0 }}
             transition={{ duration: 1, ease: [0.13, 0.53, 0.38, 0.97] }}
-          ></motion.div>
-        </motion.body>
-      </AnimatePresence>
+          ></motion.div> */}
+        </body>
+      {/* </AnimatePresence> */}
     </html>
   );
 }

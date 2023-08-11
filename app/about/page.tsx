@@ -6,7 +6,7 @@ import me from "@/public/assets/img/me.jpg";
 
 export default function page() {
   return (
-    <div id="about-page">
+    <div id="about-page" className="fade-in">
       <section id="jason">
         <PageHeader />
         <div className="content">

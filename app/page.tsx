@@ -14,7 +14,7 @@ export default async function Home() {
     weatherIcon = '🌧️'; // Rainy
   }
   return (
-    <div>
+    <div className="fade-in">
       <Hero temperature={Math.round(temperature)} weatherIcon={weatherIcon}/>
       <Self section={1}/>
       <Skills section={2}/>

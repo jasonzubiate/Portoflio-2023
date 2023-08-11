@@ -9,7 +9,7 @@ import "@/styles/WorkPage.css";
 
 export default function page() {
   return (
-    <div id="work-page">
+    <div id="work-page" className="fade-in">
       <section id="work-landing">
         <PageHeader />
         <div className="content">
