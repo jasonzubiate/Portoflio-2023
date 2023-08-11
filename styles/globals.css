@@ -25,9 +25,9 @@
 .bold {
   font-weight: bold;
 }
-/* body {
+body {
   overflow: hidden;
-} */
+}
 body,
 main {
   height: 100vh;
@@ -40,8 +40,6 @@ main {
   position: relative;
   padding: 0 4rem;
   z-index: 2;
-  overflow-y: auto;
-  overflow-x: hidden;
   transition: transform 500ms var(--TRANSITION);
 }
 .shifted-main {
