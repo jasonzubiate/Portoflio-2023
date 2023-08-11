@@ -22,7 +22,7 @@ interface NavCarouselProps {
 function NavCarousel({ navToggle, setNavToggle }: NavCarouselProps) {
   const { width, height } = useWindowDimensions();
 
-  const [currentPage, setCurrentPage] = useState([
+  const [pages, setPages] = useState([
     {
       name: "Home",
       image: homeDesk,
@@ -30,19 +30,19 @@ function NavCarousel({ navToggle, setNavToggle }: NavCarouselProps) {
       selected: true,
     },
     {
-      name: "Work",
+      name: "work",
       image: homeDesk,
       mobileImage: homeMobile,
       selected: false,
     },
     {
-      name: "About",
+      name: "about",
       image: aboutDesk,
       mobileImage: aboutMobile,
       selected: false,
     },
     {
-      name: "Contact",
+      name: "contact",
       image: contactDesk,
       mobileImage: contactMobile,
       selected: false,
@@ -56,14 +56,15 @@ function NavCarousel({ navToggle, setNavToggle }: NavCarouselProps) {
           navToggle ? "shifted-navcards" : "unshifted-navcards"
         }`}
       >
-        {currentPage.map((page: any) => (
+        {pages.map((page: any) => (
           <NavCard
             key={page.name}
             linkName={page.name}
-            linkImage={width > 640 ? page.image : page.mobileImage}
+            linkImage={width > 766 ? page.image : page.mobileImage}
             setNavToggle={setNavToggle}
             selected={page.selected}
-            setCurrentPage={setCurrentPage}
+            pages={pages}
+            setPages={setPages}
           />
         ))}
       </div>

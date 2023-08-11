@@ -13,12 +13,12 @@ function NavLayout({ children }: NavLayoutProps) {
   const [navToggle, setNavToggle] = useState(false);
 
   return (
-    <>
+    <div>
       <Navbar />
       <main className={`${navToggle ? "shifted-main" : ""}`}>{children}</main>
-      <NavCarousel navToggle={navToggle} setNavToggle={setNavToggle} />
       <NavToggle toggle={navToggle} setToggle={setNavToggle} />
-    </>
+      <NavCarousel navToggle={navToggle} setNavToggle={setNavToggle} />
+    </div>
   );
 }
 

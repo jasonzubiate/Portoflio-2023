@@ -3,7 +3,7 @@
 	width: 100%;
 	position: absolute;
 	left: 0px;
-	top: 42vh;
+	bottom: 0px;
 	z-index: 1;
   overflow: hidden;
 }
@@ -33,13 +33,18 @@
 		justify-content: flex-start;
 	}
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1230px) {
+	#nav-carousel {
+		height: 45vh;
+	}
+}
+@media screen and (max-width: 766px) {
 	.navcards {
 		gap: clamp(1rem, 2vw, 2rem);
 	}
 }
 @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
-	.nav-carousel {
+	#nav-carousel {
 		height: 100vh;
 	}
 }

@@ -1,64 +1,68 @@
 .navcard {
-	text-decoration: none;
-	transition: transform 500ms cubic-bezier(0.13, 0.53, 0.38, 0.97);
+  text-decoration: none;
+  transition: transform 500ms cubic-bezier(0.13, 0.53, 0.38, 0.97);
 }
 .navcard:hover {
-	transform: scale(1.04);
+  transform: scale(1.04);
 }
 .navcard:active {
-	transform: scale(0.96);
+  transform: scale(0.96);
 }
 .navcard > .title-group {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	gap: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
 }
 .navcard > .title-group > .active-circle {
-	width: 0.6rem;
-	height: 0.6rem;
-	background-color: #0c5dff;
-	border: none;
-	border-radius: 5rem;
-	outline: none;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: #0c5dff;
+  border: none;
+  border-radius: 5rem;
+  outline: none;
 }
 .navcard > .title-group > .navcard-title {
-	color: var(--SMOKEWHITE);
-	font-size: 1rem;
-	margin: 0rem;
-	text-transform: uppercase;
+  color: var(--SMOKEWHITE);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 .navcard > .navcard-image {
-	width: max(20vw, 400px);
-	aspect-ratio: 1.9/1;
-	border-radius: 0.5rem;
-	margin-top: 0.75rem;
-	object-fit: cover;
-	object-position: top;
+  width: max(20vw, 400px);
+  position: relative;
+  aspect-ratio: 1.9/1;
+  margin-top: 0.75rem;
+}
+.navcard > .navcard-image .img {
+	border-radius: 0.25rem;
+  object-fit: cover;
+  object-position: top;
 }
 
-@media screen and (max-width: 640px) {
-	.navcard > .title-group {
-		gap: 0.3rem;
-	}
-	.navcard > .title-group > .active-circle {
-		width: .4rem;
-		height: .4rem;
-	}
-	.navcard > .title-group > .navcard-title {
-		font-size: 0.6rem;
-	}
+@media screen and (max-width: 766px) {
+  .navcard > .title-group {
+    gap: 0.3rem;
+  }
+  .navcard > .title-group > .active-circle {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  .navcard > .title-group > .navcard-title {
+    font-size: 13px;
+  }
   .navcard > .navcard-image {
-		width: max(10vw, 120px);
-		aspect-ratio: 0.9/1.5
-	}
+		width: max(13vw, 135px);
+    aspect-ratio: 0.9/1.5;
+    margin-top: 0.5rem;
+  }
 }
-@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
-	.navcard > .title-group > .navcard-title {
-		font-size: 0.8rem;
-	}
+@media screen and (max-height: 426px) and (min-aspect-ratio: 7/4) {
+  .navcard > .title-group > .navcard-title {
+    font-size: 0.8rem;
+  }
   .navcard > .title-group > .navcard-image {
-		width: max(10vw, 340px);
-		aspect-ratio: 1.8/1;
-	}
+    width: max(10vw, 340px);
+    aspect-ratio: 1.8/1;
+  }
 }

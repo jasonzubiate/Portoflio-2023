@@ -8,7 +8,8 @@ interface NavlinkProps {
   linkImage: any;
   setNavToggle: any;
   selected: boolean;
-  setCurrentPage: any;
+  pages: any;
+  setPages: any;
 }
 
 function NavCard({
@@ -16,21 +17,41 @@ function NavCard({
   linkImage,
   setNavToggle,
   selected,
-  setCurrentPage,
+  pages,
+  setPages,
 }: NavlinkProps) {
+  function clickHandler(LinkName: string) {
+    setPages(
+      pages.map((page: any) => {
+        if (page.name === linkName) {
+          return { ...page, selected: true };
+        } else {
+          return { ...page, selected: false };
+        }
+      })
+    );
+    setNavToggle(false);
+  }
+
   return (
-    <Link className="navcard" href={linkName != "Home" ? `/${linkName.toLowerCase()}` : "/"}>
+    <Link
+      className="navcard"
+      href={linkName != "Home" ? `/${linkName}` : "/"}
+      onClick={() => clickHandler(linkName)}
+    >
       <div className="title-group">
         {selected ? <div className="active-circle"></div> : null}
         <label className="navcard-title">{linkName}</label>
       </div>
-      <Image
-        className="navcard-image"
-        src={linkImage}
-        alt={linkName}
-        quality={100}
-        priority
-      />
+      <div className="navcard-image">
+        <Image
+          className="img"
+          src={linkImage}
+          alt={linkName}
+          quality={100}
+          fill
+        />
+      </div>
     </Link>
   );
 }

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Navbar() {
   return (
-    <nav>
+    <nav id="navbar">
       <Link className="text-m" href="./">Jason Zubiate</Link>
 
       {/* Desktop Navigation */}

@@ -19,7 +19,7 @@
   --FFPRIMARY: "Neue Montreal" sans-serif;
   --FFSECONDARY: "Tusker Grotesk";
   --TRANSITION: cubic-bezier(0.13, 0.53, 0.38, 0.97);
-  --BLACK: #080808;
+  --BLACK: #000000;
   --SMOKEWHITE: #dddad8;
 }
 .bold {
@@ -39,7 +39,6 @@ main {
   z-index: 2;
   overflow-y: auto;
   overflow-x: hidden;
-  padding-top: 2.5rem;
   transition: transform 500ms var(--TRANSITION);
 }
 .shifted-main {
@@ -118,6 +117,10 @@ section:last-child {
   }
 }
 @media screen and (max-width: 1230px) {
+  .shifted-main {
+    transform: translateY(-43%);
+    overflow-y: hidden;
+  }
   .text-l {
     font-size: 30px;
   }
