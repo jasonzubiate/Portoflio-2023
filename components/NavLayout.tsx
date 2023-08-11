@@ -13,7 +13,7 @@ function NavLayout({ children }: NavLayoutProps) {
   const [navToggle, setNavToggle] = useState(false);
 
   return (
-    <div>
+    <div className="bg-black">
       <Navbar />
       <main className={`${navToggle ? "shifted-main" : ""}`}>{children}</main>
       <NavToggle toggle={navToggle} setToggle={setNavToggle} />
