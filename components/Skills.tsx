@@ -1,6 +1,9 @@
+'use client'
+
 import "@/styles/Skills.css";
 import CustomButton from "./CustomButton";
 import { SectionHeader } from ".";
+import { emailRedirect } from "@/utils";
 
 interface Props {
   section: number;
@@ -45,7 +48,7 @@ function Skills({ section }: Props) {
               </p>
             </div>
           </div>
-          <CustomButton title="Contact Me" textStyles="text-m" />
+          <CustomButton title="Contact Me" textStyles="text-m" handleClick={emailRedirect}/>
         </div>
       </div>
     </section>

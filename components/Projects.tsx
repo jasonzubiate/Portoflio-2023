@@ -18,7 +18,7 @@ function Projects({ section }: Props) {
         <div className="content">
           <div className="project-info">
             <h3 className="text-2xl project-title uppercase">
-              Personal Portfolio
+              <a href="https://www.jasonzubiate.com">Personal Portfolio</a>
             </h3>
             <div className="project-other">
               <p className="text-m project-description uppercase">
@@ -57,8 +57,12 @@ function Projects({ section }: Props) {
         <div className="content">
           <div className="project-info">
             <h3 className="text-2xl project-title uppercase">
-              <span>PromptS</span>
-              <span>hare</span>
+              <span>
+                <a href="https://prompt-share-one.vercel.app">PromptS</a>
+              </span>
+              <span>
+                <a href="https://prompt-share-one.vercel.app">hare</a>
+              </span>
             </h3>
             <div className="project-other">
               <p className="text-m project-description uppercase">
@@ -99,7 +103,9 @@ function Projects({ section }: Props) {
       <div className="project-container">
         <div className="content">
           <div className="project-info">
-            <h3 className="text-2xl project-title uppercase">Threads Clone</h3>
+            <h3 className="text-2xl project-title uppercase">
+              <a href="https://www.jasonzubiate.com">Threads Clone</a>
+            </h3>
             <div className="project-other">
               <p className="text-m project-description uppercase">
                 This is my personal website which contains a portfolio, resume,

@@ -2,6 +2,7 @@ import "@/styles/About.css";
 import Image from "next/image";
 import ableton from "@/public/assets/img/ableton.jpg";
 import { SectionHeader } from ".";
+import Link from "next/link";
 
 interface Props {
   section: number;
@@ -25,7 +26,7 @@ function About({ section }: Props) {
             music, enjoying some food, or out with my friends for the majority
             of the day.
           </p>
-          <p className="text-m underline link">More about me</p>
+          <Link href="/about" className="text-m basic-link">More about me</Link>
         </div>
       </div>
     </section>

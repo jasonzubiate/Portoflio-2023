@@ -38,7 +38,7 @@ function Footer() {
       <div className="footer-right">
         <a
           className="text-m hover-link"
-          href="https://dribbble.com/jasonzubiate"
+          href="https://portfolio2-jasonzubiate.vercel.app/"
         >
           v1
         </a>

@@ -1,33 +1,17 @@
-import { fetchLocalWeather } from "@/utils";
-import { Projects, Connect, Footer, SectionHeader } from "@/components";
+import {
+  Projects,
+  Connect,
+  Footer,
+  SectionHeader,
+  PageHeader,
+} from "@/components";
 import "@/styles/WorkPage.css";
 
-export default async function page() {
-  const weather = await fetchLocalWeather();
-  const { cloudCover, rainIntensity, temperature } =
-    weather.timelines.minutely[0]?.values;
-
-  let weatherIcon = "";
-  if (temperature > 70) {
-    weatherIcon = "☀️"; // Sunny
-  } else if (cloudCover > 3) {
-    weatherIcon = "☁️"; // Cloudy
-  } else if (rainIntensity > 0) {
-    weatherIcon = "🌧️"; // Rainy
-  }
+export default function page() {
   return (
     <div id="work-page">
       <section id="work-landing">
-        <div className="page-header">
-          <div className="header-item">
-            <p className="text-m w-[200px]">Recent UCI Graduate</p>
-          </div>
-          <div className="header-item">
-            <p className="text-m w-[200px]">
-              {Math.round(temperature)}ºF {weatherIcon} Los Angeles 10:16 PM
-            </p>
-          </div>
-        </div>
+        <PageHeader />
         <div className="content">
           <SectionHeader number={1} title="My Work" />
           <div className="title-container">

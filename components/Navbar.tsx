@@ -4,13 +4,23 @@ import Link from "next/link";
 function Navbar() {
   return (
     <nav id="navbar">
-      <Link className="text-m" href="./">Jason Zubiate</Link>
+      <Link className="text-m" href="./">
+        Jason Zubiate
+      </Link>
 
       {/* Desktop Navigation */}
       <span className="desk-nav">
-        <Link className="text-m hover-link" href="/work">Work</Link>,{" "}
-        <Link className="text-m hover-link" href="/about">About</Link>,{" "}
-        <Link className="text-m hover-link" href="/contact">Contact</Link>
+        <Link className="text-m hover-link" href="/work">
+          Work
+        </Link>
+        ,{" "}
+        <Link className="text-m hover-link" href="/about">
+          About
+        </Link>
+        ,{" "}
+        <Link className="text-m hover-link" href="/contact">
+          Contact
+        </Link>
       </span>
 
       {/* Mobile Navigation */}
@@ -20,3 +30,7 @@ function Navbar() {
 }
 
 export default Navbar;
+function setLoading(arg0: boolean) {
+  throw new Error("Function not implemented.");
+}
+

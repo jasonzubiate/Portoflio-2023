@@ -3,22 +3,14 @@
 import "@/styles/Connect.css";
 import CustomButton from "./CustomButton";
 import { SectionHeader } from ".";
+import { emailRedirect } from "@/utils";
 
 interface Props {
   section: number;
 }
 
 function Connect({ section }: Props) {
-  const emailRedirect = () => {
-    const emailAddress = "jzubiate.dev@gmail.com";
-    const subject = "🤙 I am looking for a Frontend Engineer. Let's talk";
-
-    const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(
-      subject
-    )}`;
-
-    window.location.href = mailtoUrl;
-  };
+  
   return (
     <section id="connect">
       <SectionHeader number={section} title="Want to work together?" />

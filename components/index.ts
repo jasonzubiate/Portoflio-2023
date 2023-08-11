@@ -1,5 +1,6 @@
 import NavCarousel from "./NavCarousel";
 import Navbar from "./Navbar";
+import PageHeader from "./PageHeader";
 import SectionHeader from "./SectionHeader";
 import Hero from "./Hero";
 import Self from "./Self";
@@ -14,6 +15,7 @@ export {
   Navbar,
   NavToggle,
   NavCarousel,
+  PageHeader,
   SectionHeader,
   Hero,
   Self,

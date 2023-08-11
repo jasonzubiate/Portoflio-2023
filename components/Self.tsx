@@ -1,5 +1,6 @@
 import "@/styles/Self.css";
 import { SectionHeader } from ".";
+import Link from "next/link";
 
 interface Props {
   section: number;
@@ -37,7 +38,7 @@ function Self({ section }: Props) {
               integration of frontend elements with back-end systems and
               functionalities.
             </p>
-            <p className="text-m">More about me and services</p>
+            <Link href="/about" className="text-m basic-link">More about me</Link>
           </div>
         </div>
       </div>

@@ -9,6 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from "split-type";
 import { useEffect } from "react";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
+import { PageHeader } from ".";
 
 interface HeroProps {
   temperature: number;
@@ -40,16 +41,8 @@ function Hero({ temperature, weatherIcon }: HeroProps) {
 
   return (
     <section id="hero">
-      <div className="page-header">
-        <div className="header-item">
-          <p className="text-m w-[200px]">Recent UCI Graduate</p>
-        </div>
-        <div className="header-item">
-          <p className="text-m w-[200px]">
-            {temperature}ºF {weatherIcon} Los Angeles 10:16 PM
-          </p>
-        </div>
-      </div>
+      <PageHeader />
+
       <div className="hero-header uppercase">
         <p className="text-m ">Creative</p>
         <h2 className="text-4xl role reveal-type">Frontend Engineer</h2>

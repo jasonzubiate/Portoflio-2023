@@ -1,54 +1,18 @@
-// "use client";
+"use client";
 
-import { fetchLocalWeather } from "@/utils";
+import { emailRedirect } from "@/utils";
 import "@/styles/ContactPage.css";
-import { Footer } from "@/components";
+import { Footer, PageHeader } from "@/components";
 
-export default async function page() {
-  const weather = await fetchLocalWeather();
-  const { cloudCover, rainIntensity, temperature } =
-    weather.timelines.minutely[0]?.values;
-
-  let weatherIcon = "";
-  if (temperature > 70) {
-    weatherIcon = "☀️"; // Sunny
-  } else if (cloudCover > 3) {
-    weatherIcon = "☁️"; // Cloudy
-  } else if (rainIntensity > 0) {
-    weatherIcon = "🌧️"; // Rainy
-  }
-
-  // const emailRedirect = () => {
-  //   const emailAddress = "jzubiate.dev@gmail.com";
-  //   const subject = "🤙 I am looking for a Frontend Engineer. Let's talk";
-
-  //   const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(
-  //     subject
-  //   )}`;
-
-  //   window.location.href = mailtoUrl;
-  // };
-
+export default function page() {
   return (
     <div id="contact-page">
       <section id="contact-landing">
-        <div className="page-header">
-          <div className="header-item">
-            <p className="text-m w-[200px]">Recent UCI Graduate</p>
-          </div>
-          <div className="header-item">
-            <p className="text-m w-[200px]">
-              {Math.round(temperature)}ºF {weatherIcon} Los Angeles 10:16 PM
-            </p>
-          </div>
-        </div>
+        <PageHeader />
         <div className="content">
           <div className="cta-group">
             <h4 className="text-m catchline">Send me a message</h4>
-            <button
-              className="text-2xl link"
-              // onClick={emailRedirect}
-            >
+            <button className="text-2xl link" onClick={emailRedirect}>
               jzubiate.dev@gmail.com
             </button>
           </div>

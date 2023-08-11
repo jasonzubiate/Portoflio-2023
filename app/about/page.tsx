@@ -1,37 +1,14 @@
 import "@/styles/AboutPage.css";
-import { Connect, Footer, SectionHeader } from "@/components";
-import { fetchLocalWeather } from "@/utils";
+import { Connect, Footer, PageHeader, SectionHeader } from "@/components";
 import Image from "next/image";
 import desk from "@/public/assets/img/desk.jpg";
 import me from "@/public/assets/img/me.jpg";
 
-export default async function page() {
-  const weather = await fetchLocalWeather();
-  const { cloudCover, rainIntensity, temperature } =
-    weather.timelines.minutely[0]?.values;
-
-  let weatherIcon = "";
-  if (temperature > 70) {
-    weatherIcon = "☀️"; // Sunny
-  } else if (cloudCover > 3) {
-    weatherIcon = "☁️"; // Cloudy
-  } else if (rainIntensity > 0) {
-    weatherIcon = "🌧️"; // Rainy
-  }
-
+export default function page() {
   return (
     <div id="about-page">
       <section id="jason">
-        <div className="page-header">
-          <div className="header-item">
-            <p className="text-m w-[200px]">Recent UCI Graduate</p>
-          </div>
-          <div className="header-item">
-            <p className="text-m w-[200px]">
-              {Math.round(temperature)}ºF {weatherIcon} Los Angeles 10:16 PM
-            </p>
-          </div>
-        </div>
+        <PageHeader />
         <div className="content">
           <SectionHeader number={1} title="Jason" />
           <div className="bio-container">

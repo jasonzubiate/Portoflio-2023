@@ -10,3 +10,14 @@ export async function fetchLocalWeather() {
   const result = await response.json();
   return result;
 }
+
+export function emailRedirect() {
+  const emailAddress = "jzubiate.dev@gmail.com";
+  const subject = "🤙 I am looking for a Frontend Engineer. Let's talk";
+
+  const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(
+    subject
+  )}`;
+
+  window.location.href = mailtoUrl;
+};
