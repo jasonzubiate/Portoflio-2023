@@ -1,11 +1,4 @@
-#contact .header {
-  margin-left: 25%;
-  padding-top: 2.5rem;
-}
-#contact .header .header-item {
-  width: 25%;
-}
-#contact .content {
+#contact-page .content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,9 +33,6 @@
   }
 }
 @media screen and (max-width: 1000px) {
-  #contact .header {
-    display: none;
-  }
   #contact .content {
     gap: 8rem;
   }

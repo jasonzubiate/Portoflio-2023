@@ -8,7 +8,7 @@ function Navbar() {
 
       {/* Desktop Navigation */}
       <span className="desk-nav">
-        <Link className="text-m hover-link" href="/">Work</Link>,{" "}
+        <Link className="text-m hover-link" href="/work">Work</Link>,{" "}
         <Link className="text-m hover-link" href="/about">About</Link>,{" "}
         <Link className="text-m hover-link" href="/contact">Contact</Link>
       </span>

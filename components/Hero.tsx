@@ -40,7 +40,7 @@ function Hero({ temperature, weatherIcon }: HeroProps) {
 
   return (
     <section id="hero">
-      <div className="header">
+      <div className="page-header">
         <div className="header-item">
           <p className="text-m w-[200px]">Recent UCI Graduate</p>
         </div>

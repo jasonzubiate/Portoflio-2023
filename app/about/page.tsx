@@ -22,7 +22,7 @@ export default async function page() {
   return (
     <div id="about-page">
       <section id="jason">
-        <div className="header">
+        <div className="page-header">
           <div className="header-item">
             <p className="text-m w-[200px]">Recent UCI Graduate</p>
           </div>

@@ -53,7 +53,17 @@ section {
   flex-direction: column;
   margin-bottom: 20rem;
 }
-
+.page-header {
+  display: flex;
+  width: 100%;
+  line-height: 1.25;
+  margin-bottom: 4.5rem;
+  margin-left: 25%;
+  margin-top: 2.5rem;
+}
+.page-header .header-item {
+  width: 25%;
+}
 section:last-child {
   margin-bottom: 0;
 }
@@ -148,6 +158,12 @@ section:last-child {
   }
   section {
     margin-bottom: 9rem;
+  }
+  .page-header {
+    display: none;
+  }
+  .page-header .header-item:nth-child(2) {
+    width: 35%;
   }
   .text-m {
     font-size: 20px;

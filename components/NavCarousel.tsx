@@ -8,6 +8,8 @@ import NavCard from "./NavCard";
 
 import homeDesk from "@/public/assets/img/home-desk.png";
 import homeMobile from "@/public/assets/img/home-mobile.png";
+import workDesk from "@/public/assets/img/work-desk.png";
+import workMobile from "@/public/assets/img/work-mobile.png";
 import aboutDesk from "@/public/assets/img/about-desk.png";
 import aboutMobile from "@/public/assets/img/about-mobile.png";
 import contactDesk from "@/public/assets/img/contact-desk.png";
@@ -31,8 +33,8 @@ function NavCarousel({ navToggle, setNavToggle }: NavCarouselProps) {
     },
     {
       name: "work",
-      image: homeDesk,
-      mobileImage: homeMobile,
+      image: workDesk,
+      mobileImage: workMobile,
       selected: false,
     },
     {
