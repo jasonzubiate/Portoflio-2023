@@ -1,8 +1,8 @@
-#contact .section-header {
-  margin-top: 2.5rem;
+#contact .header {
   margin-left: 25%;
+  padding-top: 2.5rem;
 }
-#contact .section-header .header-item {
+#contact .header .header-item {
   width: 25%;
 }
 #contact .content {
@@ -40,7 +40,7 @@
   }
 }
 @media screen and (max-width: 1000px) {
-  #contact .section-header {
+  #contact .header {
     display: none;
   }
   #contact .content {
