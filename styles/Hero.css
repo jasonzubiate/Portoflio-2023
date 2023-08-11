@@ -55,9 +55,8 @@
     left: -2px;
   }
   #hero {
-    /* max-height: 90vh; */
-    /* padding-top: 4rem; */
-    height: 100vh;
+    max-height: 95vh;
+    padding-top: 8rem;
     justify-content: flex-start;
   }
   .hero-info {
