@@ -21,6 +21,7 @@
   flex-wrap: wrap;
   line-height: 1;
   text-decoration: underline;
+  cursor: pointer;
 }
 .project-info .project-other {
   width: 70%;
@@ -40,6 +41,10 @@
 .content .project-img {
   width: 50%;
 }
+.project-img .img {
+  height: 100vh;
+  object-fit: cover;
+}
 
 
 @media screen and (max-width: 1000px) {
@@ -58,5 +63,8 @@
   }
   .content .project-img {
     width: 100%;
+  }
+  .project-img .img{
+    height: 400px;
   }
 }

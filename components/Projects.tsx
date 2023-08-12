@@ -3,8 +3,9 @@
 import "@/styles/Projects.css";
 import Image from "next/image";
 import splashhouse from "@/public/assets/img/splashhouse.jpg";
-import CustomButton from "./CustomButton";
-import { SectionHeader } from ".";
+import portfolio from "@/public/assets/img/portfolio.png";
+import promptshare from "@/public/assets/img/promptshare.png";
+import { SectionHeader, CustomButton } from ".";
 
 interface Props {
   section: number;
@@ -49,7 +50,12 @@ function Projects({ section }: Props) {
             </div>
           </div>
           <div className="project-img">
-            <Image src={splashhouse} alt="Portfolio Image" quality={100} />
+            <Image
+              src={portfolio}
+              alt="Portfolio Image"
+              className="img"
+              quality={100}
+            />
           </div>
         </div>
       </div>
@@ -96,7 +102,12 @@ function Projects({ section }: Props) {
             </div>
           </div>
           <div className="project-img">
-            <Image src={splashhouse} alt="Portfolio Image" quality={100} />
+            <Image
+              src={promptshare}
+              alt="Promptshare Image"
+              className="img"
+              quality={100}
+            />
           </div>
         </div>
       </div>

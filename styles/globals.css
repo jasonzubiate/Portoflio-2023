@@ -26,17 +26,17 @@
   font-weight: bold;
 }
 body {
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 body,
 main {
-  height: 100vh;
-  width: 100vw;
   background-color: var(--SMOKEWHITE);
   font-family: var(--FFPRIMARY);
   overflow-x: hidden;
 }
 main {
+  height: 100vh;
+  width: 100vw;
   background-color: var(--SMOKEWHITE);
   position: relative;
   padding: 0 4rem;
