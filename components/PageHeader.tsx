@@ -1,12 +1,26 @@
 // import { fetchLocalWeather } from "@/utils";
-'use client'
+"use client";
 
 import "@/styles/PageHeader.css";
 import { useEffect } from "react";
+import { gsap } from "gsap";
+
+const date = new Date();
+const laTime = date.toLocaleTimeString("en-US", {
+  timeZone: "America/Los_Angeles",
+  timeStyle: "short",
+});
 
 function PageHeader() {
-  const date = new Date();
-  const time = date.getHours() + ":" + date.getMinutes();
+  useEffect(() => {
+    gsap.to(".page-header", {
+      duration: 1,
+      opacity: 1,
+      ease: "power2",
+      delay: 1.5,
+    });
+  }, []);
+
   // const weather = await fetchLocalWeather();
   // const { cloudCover, rainIntensity, temperature } =
   //   weather.timelines.minutely[0]?.values;
@@ -28,7 +42,7 @@ function PageHeader() {
         <p className="text-m w-[200px]">Recent UCI Graduate</p>
       </div>
       <div className="header-item">
-        <p className="text-m w-[200px]">Los Angeles {time} PM</p>
+        <p className="text-m w-[200px]">Los Angeles {laTime}</p>
       </div>
     </div>
   );

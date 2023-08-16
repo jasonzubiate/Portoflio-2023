@@ -25,10 +25,25 @@ function Projects({ section }: Props) {
               <p className="text-m project-description uppercase">
                 This is my personal website which contains a portfolio, resume,
                 and a bit about me. I built it with many fresh{" "}
-                <span className="link">react</span> &{" "}
-                <span className="link">next.js</span> features such as custom{" "}
-                <span className="link">hooks</span> and{" "}
-                <span className="link">gsap</span> for animiations.
+                <a href="https://react.dev/" className="link">
+                  react
+                </a>{" "}
+                &{" "}
+                <a href="https://nextjs.org/" className="link">
+                  next.js
+                </a>{" "}
+                features such as custom{" "}
+                <a
+                  href="https://legacy.reactjs.org/docs/hooks-custom.html"
+                  className="link"
+                >
+                  hooks
+                </a>{" "}
+                and{" "}
+                <a href="https://greensock.com/gsap/" className="link">
+                  gsap
+                </a>{" "}
+                for animiations.
               </p>
               <div className="btn-group">
                 <CustomButton
@@ -72,14 +87,22 @@ function Projects({ section }: Props) {
             </h3>
             <div className="project-other">
               <p className="text-m project-description uppercase">
-                A CRUD web application to allow users to create and share
-                helpful AI prompts to obtian the best responses from ai chat
-                models such as chatgpt. It&apos;s built with{" "}
-                <span className="link">react</span> &{" "}
-                <span className="link">next.js</span> and connects to a{" "}
-                <span className="link">mongodb</span> server to store user
-                accounts and posts. The styling is done with{" "}
-                <span className="link">Tailwind CSS</span> .
+                A CRUD web application to share helpful prompts and obtian the
+                best responses from ai models such as chatgpt. It&apos;s built
+                with{" "}
+                <a href="https://react.dev/" className="link">
+                  react
+                </a>{" "}
+                &{" "}
+                <a href="https://nextjs.org/" className="link">
+                  next.js
+                </a>{" "}
+                and connects to a <span className="link">mongodb</span> server
+                to store user accounts and posts. The styling is done with{" "}
+                <a href="https://tailwindcss.com/" className="link">
+                  Tailwind CSS
+                </a>{" "}
+                .
               </p>
               <div className="btn-group">
                 <CustomButton

@@ -30,22 +30,23 @@ body {
 }
 body,
 main {
-  background-color: var(--SMOKEWHITE);
   font-family: var(--FFPRIMARY);
   overflow-x: hidden;
 }
 main {
-  height: 100vh;
-  width: 100vw;
-  background-color: var(--SMOKEWHITE);
-  position: relative;
   padding: 0 4rem;
-  z-index: 2;
-  transition: transform 500ms var(--TRANSITION);
 }
 .shifted-main {
   transform: translateY(-50%);
   overflow-y: hidden;
+}
+.overlay{
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--SMOKEWHITE);
+  position: relative;
+  z-index: 2;
+  transition: transform 500ms var(--TRANSITION);
 }
 .fade-in {
 	animation: fadeInPage 1.5s;
@@ -139,6 +140,9 @@ section:last-child {
 .hover-link:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+.mask {
+  overflow: hidden;
 }
 
 @keyframes fadeInPage {
