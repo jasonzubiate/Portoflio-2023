@@ -26,7 +26,7 @@
   font-weight: bold;
 }
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 body,
 main {
@@ -35,6 +35,7 @@ main {
 }
 main {
   padding: 0 4rem;
+  height: 100%;
 }
 .shifted-main {
   transform: translateY(-50%);
