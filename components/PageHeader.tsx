@@ -2,16 +2,29 @@
 "use client";
 
 import "@/styles/PageHeader.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 
-const date = new Date();
-const laTime = date.toLocaleTimeString("en-US", {
-  timeZone: "America/Los_Angeles",
-  timeStyle: "short",
-});
-
 function PageHeader() {
+  const [laTime, setLATime] = useState(getLocalTime());
+
+  function getLocalTime() {
+    const date = new Date();
+    return date.toLocaleTimeString("en-US", {
+      timeZone: "America/Los_Angeles",
+      timeStyle: "short",
+    });
+  }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setLATime(getLocalTime());
+    }, 60000); 
+    return () => {
+      clearInterval(interval); 
+    };
+  }, []);
+
   useEffect(() => {
     gsap.to(".page-header", {
       duration: 1,
@@ -20,6 +33,22 @@ function PageHeader() {
       delay: 1.5,
     });
   }, []);
+
+  return (
+    <div className="page-header">
+      <div className="header-item">
+        <p className="text-m w-[200px]">Recent UCI Graduate</p>
+      </div>
+      <div className="header-item">
+        <p className="text-m w-[200px]">Los Angeles {laTime}</p>
+      </div>
+    </div>
+  );
+}
+
+export default PageHeader;
+
+
 
   // const weather = await fetchLocalWeather();
   // const { cloudCover, rainIntensity, temperature } =
@@ -35,17 +64,3 @@ function PageHeader() {
   // }
 
   // {Math.round(temperature)}ºF {weatherIcon}
-
-  return (
-    <div className="page-header">
-      <div className="header-item">
-        <p className="text-m w-[200px]">Recent UCI Graduate</p>
-      </div>
-      <div className="header-item">
-        <p className="text-m w-[200px]">Los Angeles {laTime}</p>
-      </div>
-    </div>
-  );
-}
-
-export default PageHeader;
