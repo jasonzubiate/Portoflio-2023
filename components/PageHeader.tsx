@@ -1,4 +1,3 @@
-// import { fetchLocalWeather } from "@/utils";
 "use client";
 
 import "@/styles/PageHeader.css";
@@ -10,18 +9,16 @@ function PageHeader() {
 
   function getLocalTime() {
     const date = new Date();
-    return date.toLocaleTimeString("en-US", {
-      timeZone: "America/Los_Angeles",
-      timeStyle: "short",
-    });
+    const options = { hour: "numeric", minute: "numeric", hour12: true } as Intl.DateTimeFormatOptions;
+    return date.toLocaleTimeString("en-US", options);
   }
 
   useEffect(() => {
     const interval = setInterval(() => {
       setLATime(getLocalTime());
-    }, 60000); 
+    }, 60000);
     return () => {
-      clearInterval(interval); 
+      clearInterval(interval);
     };
   }, []);
 
@@ -40,27 +37,10 @@ function PageHeader() {
         <p className="text-m w-[200px]">Recent UCI Graduate</p>
       </div>
       <div className="header-item">
-        <p className="text-m w-[200px]">Los Angeles {laTime}</p>
+        <p className="text-m w-[200px]">Los Angeles</p>
       </div>
     </div>
   );
 }
 
 export default PageHeader;
-
-
-
-  // const weather = await fetchLocalWeather();
-  // const { cloudCover, rainIntensity, temperature } =
-  //   weather.timelines.minutely[0]?.values;
-
-  // let weatherIcon = "";
-  // if (temperature > 70) {
-  //   weatherIcon = "☀️"; // Sunny
-  // } else if (cloudCover > 3) {
-  //   weatherIcon = "☁️"; // Cloudy
-  // } else if (rainIntensity > 0) {
-  //   weatherIcon = "🌧️"; // Rainy
-  // }
-
-  // {Math.round(temperature)}ºF {weatherIcon}
