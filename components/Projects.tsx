@@ -71,7 +71,7 @@ function Projects({ section }: Props) {
               src={portfolio}
               alt="Portfolio Image"
               className="img"
-              quality={100}
+              priority
             />
           </div>
         </div>
@@ -131,7 +131,7 @@ function Projects({ section }: Props) {
               src={promptshare}
               alt="Promptshare Image"
               className="img"
-              quality={100}
+              priority
             />
           </div>
         </div>
@@ -189,7 +189,12 @@ function Projects({ section }: Props) {
             </div>
           </div>
           <div className="project-img">
-            <Image src={carshowcase} alt="Portfolio Image" quality={100} />
+            <Image
+              src={carshowcase}
+              className="img"
+              alt="Car Showcase"
+              priority
+            />
           </div>
         </div>
       </div>

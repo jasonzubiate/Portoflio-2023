@@ -37,7 +37,7 @@ function PageHeader() {
         <p className="text-m w-[200px]">Recent UCI Graduate</p>
       </div>
       <div className="header-item">
-        <p className="text-m w-[200px]">Los Angeles</p>
+        <p className="text-m w-[200px]">Based In Los Angeles</p>
       </div>
     </div>
   );
