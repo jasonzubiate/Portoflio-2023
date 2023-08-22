@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import "@/styles/Skills.css";
 import CustomButton from "./CustomButton";
@@ -24,8 +24,8 @@ function Skills({ section }: Props) {
                 Languages
               </label>
               <p className="text-m skill-list">
-                Typescript, javascript, html, css, jsx/tsx, tailwind, python,
-                java
+                Typescript, javascript, html, css, jsx/tsx, tailwind, SASS,
+                python, jQuery
               </p>
             </div>
             <div className="skill">
@@ -48,7 +48,11 @@ function Skills({ section }: Props) {
               </p>
             </div>
           </div>
-          <CustomButton title="Contact Me" textStyles="text-m" handleClick={emailRedirect}/>
+          <CustomButton
+            title="Contact Me"
+            textStyles="text-m"
+            handleClick={emailRedirect}
+          />
         </div>
       </div>
     </section>

@@ -34,6 +34,13 @@ function Navbar() {
         <Link className="text-m hover-link" href="/contact">
           Contact
         </Link>
+        ,{" "}
+        <Link
+          href="assets/docs/JasonZubiate_Frontend_Resume.pdf"
+          className="text-m hover-link"
+        >
+          Resume
+        </Link>
       </span>
 
       {/* Mobile Navigation */}
