@@ -12,6 +12,8 @@
   height: 450px;
   margin: 2rem 0;
   object-fit: cover;
+  top: 20%;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 #jason .content .bio-bottom {
   display: flex;

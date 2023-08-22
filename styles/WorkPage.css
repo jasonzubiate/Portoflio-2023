@@ -6,7 +6,6 @@
   flex-direction: column;
   gap: 8rem;
   margin-left: 15%;
-  width: 45%;
 }
 #work-landing .content .title {
   display: flex;
@@ -20,6 +19,7 @@
 #work-landing .content .info {
   display: flex;
   justify-content: space-between;
+  width: 55%;
 }
 #work-landing .content .info .description {
   display: flex;
@@ -38,6 +38,7 @@
   #work-landing .content .info {
     flex-direction: column;
     justify-content: flex-start;
+    width: 100%;
   }
   #work-landing .content .info .description {
     width: 100%;
