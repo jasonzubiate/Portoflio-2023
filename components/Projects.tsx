@@ -99,8 +99,12 @@ function Projects({ section }: Props) {
                 <a href="https://nextjs.org/" className="link">
                   next.js
                 </a>{" "}
-                and connects to a <span className="link">mongodb</span> server
-                to store user accounts and posts. The styling is done with{" "}
+                and connects to a{" "}
+                <a href="https://www.mongodb.com/" className="link">
+                  mongodb
+                </a>{" "}
+                server to store user accounts and posts. The styling is done
+                with{" "}
                 <a href="https://tailwindcss.com/" className="link">
                   Tailwind CSS
                 </a>{" "}
@@ -112,7 +116,7 @@ function Projects({ section }: Props) {
                   textStyles="text-m"
                   handleClick={() =>
                     (window.location.href =
-                      "https://car-showcase-jz.vercel.app/")
+                      "https://prompt-share-jz.vercel.app")
                   }
                 />
                 <CustomButton
@@ -120,7 +124,7 @@ function Projects({ section }: Props) {
                   textStyles="text-m"
                   handleClick={() =>
                     (window.location.href =
-                      "https://github.com/jasonzubiate/car_showcase")
+                      "https://github.com/jasonzubiate/PromptShare")
                   }
                 />
               </div>
@@ -175,14 +179,16 @@ function Projects({ section }: Props) {
                   title="Live Demo"
                   textStyles="text-m"
                   handleClick={() =>
-                    (window.location.href = "https://www.jasonzubiate.com")
+                    (window.location.href =
+                      "https://car-showcase-jz.vercel.app/")
                   }
                 />
                 <CustomButton
                   title="Github"
                   textStyles="text-m"
                   handleClick={() =>
-                    (window.location.href = "https://www.jasonzubiate.com")
+                    (window.location.href =
+                      "https://github.com/jasonzubiate/car_showcase")
                   }
                 />
               </div>
