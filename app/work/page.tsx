@@ -11,7 +11,7 @@ import "@/styles/WorkPage.css";
 import { useEffect } from "react";
 import SplitType from "split-type";
 
-export default function page() {
+export default function Page() {
 	useEffect(() => {
 		let tl = gsap.timeline({
 			defaults: { ease: "power2", delay: 0.1 },

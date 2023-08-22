@@ -10,7 +10,7 @@ import desk from "@/public/assets/img/desk.jpg";
 import me from "@/public/assets/img/me.jpg";
 import { useEffect } from "react";
 
-export default function page() {
+export default function Page() {
 	useEffect(() => {
 		let tl = gsap.timeline({
 			defaults: { ease: "power2", delay: 0.1 },

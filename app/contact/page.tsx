@@ -9,7 +9,7 @@ import { gsap } from "gsap";
 import SplitType from "split-type";
 import { emit } from "process";
 
-export default function page() {
+export default function Page() {
   useEffect(() => {
     let tl = gsap.timeline({
       defaults: { ease: "power2", delay: 0.1 },
