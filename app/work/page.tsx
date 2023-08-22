@@ -44,18 +44,16 @@ export default function Page() {
       {
         duration: 0.5,
         yPercent: 100,
-        stagger: 0.1,
       },
-      0
+      0.5
     );
     tl.from(
       ".description",
       {
         duration: 1.5,
         opacity: 0,
-        stagger: 0.1,
       },
-      0
+      0.5
     );
   });
 

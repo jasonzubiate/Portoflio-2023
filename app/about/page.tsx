@@ -53,7 +53,7 @@ export default function Page() {
         duration: .8,
         ease: "power3.in",
       },
-      0.4
+      0.2
     );
     tl.from(
       ".t4 .char",
