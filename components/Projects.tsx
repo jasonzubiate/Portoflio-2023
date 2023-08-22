@@ -5,6 +5,8 @@ import Image from "next/image";
 import splashhouse from "@/public/assets/img/splashhouse.jpg";
 import portfolio from "@/public/assets/img/portfolio.png";
 import promptshare from "@/public/assets/img/promptshare.png";
+import carshowcase from "@/public/assets/img/carshowcase.png";
+
 import { SectionHeader, CustomButton } from ".";
 
 interface Props {
@@ -79,10 +81,10 @@ function Projects({ section }: Props) {
           <div className="project-info">
             <h3 className="text-2xl project-title uppercase">
               <span>
-                <a href="https://prompt-share-one.vercel.app">PromptS</a>
+                <a href="https://prompt-share-jz.vercel.app">PromptS</a>
               </span>
               <span>
-                <a href="https://prompt-share-one.vercel.app">hare</a>
+                <a href="https://prompt-share-jz.vercel.app">hare</a>
               </span>
             </h3>
             <div className="project-other">
@@ -110,7 +112,7 @@ function Projects({ section }: Props) {
                   textStyles="text-m"
                   handleClick={() =>
                     (window.location.href =
-                      "https://prompt-share-one.vercel.app")
+                      "https://car-showcase-jz.vercel.app/")
                   }
                 />
                 <CustomButton
@@ -118,7 +120,7 @@ function Projects({ section }: Props) {
                   textStyles="text-m"
                   handleClick={() =>
                     (window.location.href =
-                      "https://github.com/jasonzubiate/PromptShare")
+                      "https://github.com/jasonzubiate/car_showcase")
                   }
                 />
               </div>
@@ -138,16 +140,35 @@ function Projects({ section }: Props) {
         <div className="content">
           <div className="project-info">
             <h3 className="text-2xl project-title uppercase">
-              <a href="https://www.jasonzubiate.com">Threads Clone</a>
+              <span>
+                <a href="https://car-showcase-jz.vercel.app/">Carshow</a>
+              </span>
+              <span>
+                <a href="https://car-showcase-jz.vercel.app/">case</a>
+              </span>
             </h3>
             <div className="project-other">
               <p className="text-m project-description uppercase">
-                This is my personal website which contains a portfolio, resume,
-                and a bit about me. I built it with many fresh{" "}
-                <span className="link">react</span> and{" "}
-                <span className="link">next.js</span> features such as custom{" "}
-                <span className="link">hooks</span> and{" "}
-                <span className="link">gsap</span> for animiations.
+                A modern car rental platform built with{" "}
+                <a href="https://react.dev/" className="link">
+                  react
+                </a>{" "}
+                &{" "}
+                <a href="https://nextjs.org/" className="link">
+                  next.js
+                </a>{" "}
+                features inlcuding server-side rendering. It uses{" "}
+                <a
+                  href="https://rapidapi.com/apininjas/api/cars-by-api-ninjas"
+                  className="link"
+                >
+                  rapid api
+                </a>{" "}
+                for fetching detailed car data and{" "}
+                <a href="https://tailwindcss.com/" className="link">
+                  Tailwind CSS
+                </a>{" "}
+                for styling.
               </p>
               <div className="btn-group">
                 <CustomButton
@@ -168,7 +189,7 @@ function Projects({ section }: Props) {
             </div>
           </div>
           <div className="project-img">
-            <Image src={splashhouse} alt="Portfolio Image" quality={100} />
+            <Image src={carshowcase} alt="Portfolio Image" quality={100} />
           </div>
         </div>
       </div>

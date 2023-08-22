@@ -15,6 +15,7 @@
 }
 .cta-group .catchline {
   text-transform: uppercase;
+  opacity: 0;
 }
 .cta-group .links {
   display: flex;
@@ -27,6 +28,7 @@
   word-wrap: break-word;
   text-align: center;
   width: 1100px;
+  opacity: 0;
 }
 
 @media screen and (max-width: 1260px) {
