@@ -7,7 +7,7 @@ import { gsap } from "gsap";
 import SplitType from "split-type";
 
 import desk from "@/public/assets/img/desk2.jpg";
-import me from "@/public/assets/img/me.jpg";
+import me from "@/public/assets/img/me.jpeg";
 import { useEffect } from "react";
 
 export default function Page() {
