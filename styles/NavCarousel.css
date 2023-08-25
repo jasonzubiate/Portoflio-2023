@@ -1,45 +1,45 @@
 #nav-carousel {
-	height: 50vh;
-	width: 100%;
-	position: absolute;
-	left: 0px;
-	bottom: 0px;
-	z-index: 1;
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
   overflow: hidden;
 }
 .navcards {
-	display: flex;
-	justify-content: center;
-	gap: clamp(2rem, 2vw, 1.5rem);
-	margin-top: clamp(2rem, 2vw, 3rem);
-	padding: 0rem clamp(1rem, 2vw, 2rem);
-	transition: transform 500ms var(--TRANSITION);
-	overflow-x: scroll;
-	overflow-y: hidden;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: clamp(2rem, 2vw, 1.5rem);
+  margin-top: clamp(2rem, 2vw, 3rem);
+  padding: 0rem clamp(1rem, 2vw, 2rem);
+  transition: transform 500ms var(--TRANSITION);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .shifted-navcards {
-	transform: translateY(0%) scale(1);
+  transform: translateY(0%) scale(1);
 }
 .unshifted-navcards {
-	transform: translateY(70%) scale(0.9);
+  transform: translateY(70%) scale(0.9);
 }
 .navcards::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 @media screen and (max-width: 1700px) {
-	.navcards {
-		justify-content: flex-start;
-	}
+  .navcards {
+    justify-content: flex-start;
+  }
 }
 @media screen and (max-width: 766px) {
-	.navcards {
-		gap: clamp(1rem, 2vw, 2rem);
-	}
+  .navcards {
+    gap: clamp(1rem, 2vw, 2rem);
+  }
 }
 @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
-	#nav-carousel {
-		height: 100vh;
-	}
+  #nav-carousel {
+    height: 100vh;
+  }
 }

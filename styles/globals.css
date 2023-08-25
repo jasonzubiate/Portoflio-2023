@@ -32,10 +32,12 @@ body,
 main {
   font-family: var(--FFPRIMARY);
   overflow-x: hidden;
+  background-color: var(--BLACK);
 }
 main {
   padding: 0 4rem;
-  height: 100%;
+  /* height: 100%; */
+  background-color: var(--SMOKEWHITE);
 }
 .shifted-main {
   transform: translateY(-50%);
@@ -167,7 +169,7 @@ section:last-child {
 }
 @media screen and (max-width: 1230px) {
   .shifted-main {
-    transform: translateY(-57%);
+    transform: translateY(-47%);
     overflow-y: hidden;
   }
   .text-l {
