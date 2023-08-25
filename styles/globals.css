@@ -26,13 +26,12 @@
   font-weight: bold;
 }
 body {
-  /* overflow: hidden; */
+  background-color: var(--SMOKEWHITE);
 }
 body,
 main {
   font-family: var(--FFPRIMARY);
   overflow-x: hidden;
-  background-color: var(--BLACK);
 }
 main {
   padding: 0 4rem;
