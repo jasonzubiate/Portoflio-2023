@@ -36,7 +36,7 @@ main {
 }
 main {
   padding: 0 4rem;
-  /* height: 100%; */
+  height: 100%;
   background-color: var(--SMOKEWHITE);
 }
 .shifted-main {
