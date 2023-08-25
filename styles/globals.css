@@ -168,8 +168,7 @@ section:last-child {
 }
 @media screen and (max-width: 1230px) {
   .shifted-main {
-    transform: translateY(-47%);
-    overflow-y: hidden;
+    transform: translateY(-57%);
   }
   .text-l {
     font-size: 30px;
