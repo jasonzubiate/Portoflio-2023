@@ -42,7 +42,7 @@ function Footer() {
         >
           v1
         </a>
-        <button
+        {/* <button
           className="text-m hover-link"
           onClick={() =>
             window.scrollTo({
@@ -52,7 +52,7 @@ function Footer() {
           }
         >
           Back to top
-        </button>
+        </button> */}
       </div>
     </footer>
   );

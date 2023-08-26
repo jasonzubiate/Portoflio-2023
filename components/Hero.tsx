@@ -5,18 +5,14 @@ import Image from "next/image";
 import arrow from "@/public/assets/icons/down-arrow.png";
 
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from "split-type";
 import { useEffect } from "react";
-import useWindowDimensions from "@/hooks/useWindowDimensions";
+// import useWindowDimensions from "@/hooks/useWindowDimensions";
 import { PageHeader } from ".";
 
-interface HeroProps {
-  temperature: number;
-  weatherIcon: string;
-}
 
-function Hero({ temperature, weatherIcon }: HeroProps) {
+function Hero() {
   useEffect(() => {
     let tl = gsap.timeline({
       defaults: { ease: "power2", delay: 0.1 },

@@ -7,6 +7,7 @@
 }
 .custom-btn:hover .marquee {
   animation: marquee-effect 2s linear infinite;
+  transform-origin: left;
 }
 .marquee {
   display: inline-block;
