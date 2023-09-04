@@ -69,7 +69,7 @@ export default function Page() {
                 <h1 className="text-2xl uppercase a1">Projects</h1>
               </div>
               <div className="mask">
-                <p className="text-l number">03</p>
+                <p className="text-l number">04</p>
               </div>
             </div>
             <div className="info">

@@ -65,7 +65,7 @@ function Hero() {
         stagger: 0.1,
         ease: "power2",
       },
-      1.5
+      1
     );
     tl.to(
       ".arrow-mbl",
@@ -75,7 +75,7 @@ function Hero() {
         stagger: 0.1,
         ease: "power2",
       },
-      1.5
+      1
     );
     tl.to(
       ".bio-line",
@@ -85,7 +85,7 @@ function Hero() {
         stagger: 0.1,
         ease: "power2",
       },
-      1.5
+      1
     );
   }, []);
 

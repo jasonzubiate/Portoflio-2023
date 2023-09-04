@@ -11,7 +11,7 @@ function Navbar() {
       duration: 1,
       opacity: 1,
       ease: "power2",
-      delay: 1.5,
+      delay: 1,
     });
   }, []);
 

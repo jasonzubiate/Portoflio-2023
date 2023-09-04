@@ -2,7 +2,7 @@
 
 import "@/styles/Projects.css";
 import Image from "next/image";
-import splashhouse from "@/public/assets/img/splashhouse.jpg";
+import summarease from "@/public/assets/img/summarease.png";
 import portfolio from "@/public/assets/img/portfolio.png";
 import promptshare from "@/public/assets/img/promptshare.png";
 import carshowcase from "@/public/assets/img/carshowcase.png";
@@ -21,7 +21,10 @@ function Projects({ section }: Props) {
         <div className="content">
           <div className="project-info">
             <h3 className="text-2xl project-title uppercase">
-              <a href="https://www.jasonzubiate.com">Personal Portfolio</a>
+              <a href="https://www.jasonzubiate.com">
+                Portfo <br />
+                lio
+              </a>
             </h3>
             <div className="project-other">
               <p className="text-m project-description uppercase">
@@ -80,6 +83,76 @@ function Projects({ section }: Props) {
         <div className="content">
           <div className="project-info">
             <h3 className="text-2xl project-title uppercase">
+              <a href="https://summar-ease-jz.vercel.app/">
+                Summar <br />
+                Ease
+              </a>
+            </h3>
+            <div className="project-other">
+              <p className="text-m project-description uppercase">
+                An AI article summarizer powered by{" "}
+                <a href="https://openai.com/chatgpt" className="link">
+                  OpenAI
+                </a>{" "}
+                and{" "}
+                <a
+                  href="https://rapidapi.com/restyler/api/article-extractor-and-summarizer?utm_source=youtube.com%2FJavaScriptMastery&utm_medium=referral&utm_campaign=DevRel"
+                  className="link"
+                >
+                  Rapid API
+                </a>{" "}
+                . This build uses{" "}
+                <a href="https://react.dev/" className="link">
+                  react
+                </a>{" "}
+                &{" "}
+                <a href="https://nextjs.org/" className="link">
+                  next.js
+                </a>{" "}
+                along with{" "}
+                <a href="https://redux-toolkit.js.org/" className="link">
+                  Redux Toolkit
+                </a>{" "}
+                for state management. The minimalist styling is done with{" "}
+                <a href="https://tailwindcss.com/" className="link">
+                  Tailwind CSS
+                </a>
+                .
+              </p>
+              <div className="btn-group">
+                <CustomButton
+                  title="Live Demo"
+                  textStyles="text-m"
+                  handleClick={() =>
+                    (window.location.href =
+                      "https://summar-ease-jz.vercel.app/")
+                  }
+                />
+                <CustomButton
+                  title="Github"
+                  textStyles="text-m"
+                  handleClick={() =>
+                    (window.location.href =
+                      "https://github.com/jasonzubiate/SummarEase")
+                  }
+                />
+              </div>
+            </div>
+          </div>
+          <div className="project-img">
+            <Image
+              src={summarease}
+              alt="summarease_img"
+              className="img"
+              priority
+            />
+          </div>
+        </div>
+      </div>
+      <div className="project-container">
+        <div className="content">
+          <div className="project-info">
+            <h3 className="text-2xl project-title uppercase">
               <span>
                 <a href="https://prompt-share-jz.vercel.app">PromptS</a>
               </span>
@@ -107,7 +180,7 @@ function Projects({ section }: Props) {
                 with{" "}
                 <a href="https://tailwindcss.com/" className="link">
                   Tailwind CSS
-                </a>{" "}
+                </a>
                 .
               </p>
               <div className="btn-group">

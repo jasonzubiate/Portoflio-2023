@@ -1,17 +1,56 @@
-export async function fetchLocalWeather() {
-  const headers = {
-    "X-RapidAPI-Key": "6bea268cc7mshebc7815749959c5p1787f3jsn9c4d98aca92a",
-    "X-RapidAPI-Host": "tomorrow-io1.p.rapidapi.com",
-  };
-  const response = await fetch(
-    "https://tomorrow-io1.p.rapidapi.com/v4/weather/forecast?timesteps=1m&location=los%20angeles&units=imperial",
-    { headers: headers }
-  );
-  const result = await response.json();
-  return result;
+export async function fetchWeather(): Promise<{
+  temp: number;
+  desc: string;
+  icon: string;
+}> {
+  try {
+    const response = await fetch(
+      "https://api.weather.gov/gridpoints/LOX/164,41/forecast"
+    );
+    const data = await response.json();
+    const shortForecast = data.properties.periods[0].shortForecast;
+    const temperature = data.properties.periods[0].temperature;
+    const icon = getWeatherIcon(shortForecast);
+
+    return { temp: temperature, desc: shortForecast, icon };
+  } catch (error) {
+    console.error("Error fetching weather data:", error);
+    return { temp: 0, desc: "", icon: "" };
+  }
 }
 
-export function emailRedirect() {
+export function getWeatherIcon(weatherDesc: string): string {
+  const lowercaseDesc = weatherDesc.toLowerCase();
+
+  if (lowercaseDesc.includes("sunny")) {
+    return "☀️";
+  } else if (lowercaseDesc.includes("cloudy")) {
+    return "☁️";
+  } else if (lowercaseDesc.includes("rain")) {
+    return "🌧️";
+  } else {
+    return "☀️";
+  }
+}
+
+export function getLocalTimeLosAngeles(): string {
+  const date = new Date();
+  const options = {
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true,
+  } as Intl.DateTimeFormatOptions;
+
+  const timeZone = "America/Los_Angeles";
+  const losAngelesTime = date.toLocaleTimeString("en-US", {
+    ...options,
+    timeZone,
+  });
+
+  return losAngelesTime;
+}
+
+export function emailRedirect(): void {
   const emailAddress = "jzubiate.dev@gmail.com";
   const subject = "🤙 I am looking for a Frontend Engineer. Let's talk";
 
@@ -20,4 +59,4 @@ export function emailRedirect() {
   )}`;
 
   window.location.href = mailtoUrl;
-};
+}
