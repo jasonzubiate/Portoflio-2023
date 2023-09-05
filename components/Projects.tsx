@@ -100,7 +100,7 @@ function Projects({ section }: Props) {
                   className="link"
                 >
                   Rapid API
-                </a>{" "}
+                </a>
                 . This build uses{" "}
                 <a href="https://react.dev/" className="link">
                   react

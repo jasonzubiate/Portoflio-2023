@@ -33,7 +33,7 @@ function Skills({ section }: Props) {
                 Software
               </label>
               <p className="text-m skill-list">
-                React, react native, next.js, angular, jest, cypress, gsap,
+                React, react native, next.js, angular, redux, jest, cypress, gsap,
                 redux, recoil, figma, miro, maze, testflight
               </p>
             </div>
