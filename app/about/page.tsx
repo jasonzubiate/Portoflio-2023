@@ -113,7 +113,7 @@ export default function Page() {
                 <p className="text-m">
                   Each project is an opportunity to learn new concepts across
                   multiple disciplines. I am motivated by working on meaningful
-                  intiatives with diverse teamates.
+                  initiatives with diverse teammates.
                 </p>
                 <Image
                   className="portrait"

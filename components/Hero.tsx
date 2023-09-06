@@ -119,7 +119,7 @@ function Hero() {
               <span className="bio-line block">experience in React.</span>
             </div>
             <div className="mask">
-              <span className="bio-line block">Based in Los Angeles, CA</span>
+              <span className="bio-line block">Based in Los Angeles, CA.</span>
             </div>
           </div>
         </div>
