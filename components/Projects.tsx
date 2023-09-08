@@ -2,8 +2,8 @@
 
 import "@/styles/Projects.css";
 import Image from "next/image";
-import summarease from "@/public/assets/img/summarease.png";
 import portfolio from "@/public/assets/img/portfolio.png";
+import summarease from "@/public/assets/img/summarease.png";
 import promptshare from "@/public/assets/img/promptshare.png";
 import carshowcase from "@/public/assets/img/carshowcase.png";
 

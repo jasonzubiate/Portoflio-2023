@@ -1,7 +1,7 @@
 #work-landing .content {
   margin-top: 7rem;
 }
-#work-landing .content .title-container {
+#work-landing .content .container {
   display: flex;
   flex-direction: column;
   gap: 8rem;
@@ -30,7 +30,7 @@
   #work-landing .content {
     margin-top: 10rem;
   }
-  #work-landing .content .title-container {
+  #work-landing .content .container {
     margin-left: 0;
     gap: 4rem;
     width: 100%;

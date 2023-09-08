@@ -11,6 +11,7 @@ import Connect from "./Connect";
 import Footer from "./Footer";
 import NavToggle from "./NavToggle";
 import CustomButton from "./CustomButton";
+import Labs from "./Labs";
 
 export {
   Navbar,
@@ -22,6 +23,7 @@ export {
   Self,
   Skills,
   Projects,
+  Labs,
   About,
   Connect,
   Footer,

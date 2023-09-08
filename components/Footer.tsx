@@ -28,9 +28,9 @@ function Footer() {
             ,{" "}
             <a
               className="text-m hover-link"
-              href="https://dribbble.com/jasonzubiate"
+              href="https://codesandbox.io/u/jasonzubiate"
             >
-              Dribbble
+              CodeSandbox
             </a>
           </span>
         </div>

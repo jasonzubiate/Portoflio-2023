@@ -34,7 +34,7 @@ function Skills({ section }: Props) {
               </label>
               <p className="text-m skill-list">
                 React, react native, next.js, angular, redux, jest, cypress, gsap,
-                redux, recoil, figma, miro, maze, testflight
+                redux, recoil, figma, miro, vercel, testflight
               </p>
             </div>
             <div className="skill">
