@@ -65,9 +65,9 @@
     top: 4%;
   }
   #hero {
-    height: 90vh;
+    height: 100vh;
     padding-top: 8rem;
-    padding-bottom: 1rem;
+    padding-bottom: 4rem;
     justify-content: flex-start;
   }
   .hero-info {
