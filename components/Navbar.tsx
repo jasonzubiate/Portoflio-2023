@@ -36,7 +36,7 @@ function Navbar() {
         </Link>
         ,{" "}
         <Link
-          href="assets/docs/JasonZubiate_Frontend_Resume.pdf"
+          href="assets/docs/JasonZubiate_FrontendEngineer.pdf"
           className="text-m hover-link"
         >
           Resume
