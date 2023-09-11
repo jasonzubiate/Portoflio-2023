@@ -18,7 +18,7 @@ function NavLayout({ children }: NavLayoutProps) {
     <div className="bg-black">
       <div className={`overlay ${navToggle ? "shifted-main" : ""}`}>
         <Navbar />
-        <main>{children}</main>
+        <main className={`${navToggle ? "overflow-y-hidden" : ""} `}>{children}</main>
       </div>
       <NavCarousel navToggle={navToggle} setNavToggle={setNavToggle} />
       <NavToggle toggle={navToggle} setToggle={setNavToggle} />
