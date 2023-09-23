@@ -4,6 +4,7 @@ import "@/styles/Projects.css";
 import Image from "next/image";
 import portfolio from "@/public/assets/img/portfolio.png";
 import summarease from "@/public/assets/img/summarease.png";
+import demosdelivered from "@/public/assets/img/demosdelivered.png";
 import promptshare from "@/public/assets/img/promptshare.png";
 import carshowcase from "@/public/assets/img/carshowcase.png";
 
@@ -21,7 +22,7 @@ function Projects({ section }: Props) {
         <div className="content">
           <div className="project-info">
             <h3 className="text-2xl project-title uppercase">
-              <a href="https://www.jasonzubiate.com">
+              <a target="_blank" href="https://www.jasonzubiate.com">
                 Portfo <br />
                 lio
               </a>
@@ -30,11 +31,11 @@ function Projects({ section }: Props) {
               <p className="text-m project-description uppercase">
                 This is my personal website which contains a portfolio, resume,
                 and a bit about me. I built it with many fresh{" "}
-                <a href="https://react.dev/" className="link">
+                <a target="_blank" href="https://react.dev/" className="link">
                   react
                 </a>{" "}
                 &{" "}
-                <a href="https://nextjs.org/" className="link">
+                <a target="_blank" href="https://nextjs.org/" className="link">
                   next.js
                 </a>{" "}
                 features such as custom{" "}
@@ -45,7 +46,11 @@ function Projects({ section }: Props) {
                   hooks
                 </a>{" "}
                 and{" "}
-                <a href="https://greensock.com/gsap/" className="link">
+                <a
+                  target="_blank"
+                  href="https://greensock.com/gsap/"
+                  className="link"
+                >
                   gsap
                 </a>{" "}
                 for animiations.
@@ -62,8 +67,10 @@ function Projects({ section }: Props) {
                   title="Github"
                   textStyles="text-m"
                   handleClick={() =>
-                    (window.location.href =
-                      "https://github.com/jasonzubiate/portfolio2023")
+                    window.open(
+                      "https://github.com/jasonzubiate/portfolio2023",
+                      "_blank"
+                    )
                   }
                 />
               </div>
@@ -83,7 +90,7 @@ function Projects({ section }: Props) {
         <div className="content">
           <div className="project-info">
             <h3 className="text-2xl project-title uppercase">
-              <a href="https://summar-ease-jz.vercel.app/">
+              <a target="_blank" href="https://summar-ease-jz.vercel.app/">
                 Summar <br />
                 Ease
               </a>
@@ -91,7 +98,11 @@ function Projects({ section }: Props) {
             <div className="project-other">
               <p className="text-m project-description uppercase">
                 An AI article summarizer powered by{" "}
-                <a href="https://openai.com/chatgpt" className="link">
+                <a
+                  target="_blank"
+                  href="https://openai.com/chatgpt"
+                  className="link"
+                >
                   OpenAI
                 </a>{" "}
                 and{" "}
@@ -102,19 +113,27 @@ function Projects({ section }: Props) {
                   Rapid API
                 </a>
                 . This build uses{" "}
-                <a href="https://react.dev/" className="link">
+                <a target="_blank" href="https://react.dev/" className="link">
                   react
                 </a>{" "}
                 &{" "}
-                <a href="https://nextjs.org/" className="link">
+                <a target="_blank" href="https://nextjs.org/" className="link">
                   next.js
                 </a>{" "}
                 along with{" "}
-                <a href="https://redux-toolkit.js.org/" className="link">
+                <a
+                  target="_blank"
+                  href="https://redux-toolkit.js.org/"
+                  className="link"
+                >
                   Redux Toolkit
                 </a>{" "}
                 for state management. The minimalist styling is done with{" "}
-                <a href="https://tailwindcss.com/" className="link">
+                <a
+                  target="_blank"
+                  href="https://tailwindcss.com/"
+                  className="link"
+                >
                   Tailwind CSS
                 </a>
                 .
@@ -124,16 +143,17 @@ function Projects({ section }: Props) {
                   title="Live Demo"
                   textStyles="text-m"
                   handleClick={() =>
-                    (window.location.href =
-                      "https://summar-ease-jz.vercel.app/")
+                    window.open("https://summar-ease-jz.vercel.app/", "_blank")
                   }
                 />
                 <CustomButton
                   title="Github"
                   textStyles="text-m"
                   handleClick={() =>
-                    (window.location.href =
-                      "https://github.com/jasonzubiate/SummarEase")
+                    window.open(
+                      "https://github.com/jasonzubiate/SummarEase",
+                      "_blank"
+                    )
                   }
                 />
               </div>
@@ -153,11 +173,85 @@ function Projects({ section }: Props) {
         <div className="content">
           <div className="project-info">
             <h3 className="text-2xl project-title uppercase">
+              <a target="_blank" href="https://www.demosdelivered.live/">
+                Demos <br />
+                Delivered
+              </a>
+            </h3>
+            <div className="project-other">
+              <p className="text-m project-description uppercase">
+                A web platform for aspiring producers to submit their demos to
+                the hottest EDM labels. I used{" "}
+                <a target="_blank" href="https://react.dev/" className="link">
+                  react
+                </a>{" "}
+                &{" "}
+                <a target="_blank" href="https://nextjs.org/" className="link">
+                  next.js
+                </a>{" "}
+                along with{" "}
+                <a
+                  target="_blank"
+                  href="https://www.mongodb.com/"
+                  className="link"
+                >
+                  mongodb
+                </a>{" "}
+                to store music label information. The responsive styling is done
+                with{" "}
+                <a
+                  target="_blank"
+                  href="https://tailwindcss.com/"
+                  className="link"
+                >
+                  Tailwind CSS
+                </a>
+                . Currently have 200 active users.
+              </p>
+              <div className="btn-group">
+                <CustomButton
+                  title="Live Demo"
+                  textStyles="text-m"
+                  handleClick={() =>
+                    window.open("https://www.demosdelivered.live/", "_blank")
+                  }
+                />
+                <CustomButton
+                  title="Github"
+                  textStyles="text-m"
+                  handleClick={() =>
+                    window.open(
+                      "https://github.com/jasonzubiate/Demos-Delivered",
+                      "_blank"
+                    )
+                  }
+                />
+              </div>
+            </div>
+          </div>
+          <div className="project-img">
+            <Image
+              src={demosdelivered}
+              alt="demos_delivered"
+              className="img"
+              priority
+            />
+          </div>
+        </div>
+      </div>
+      <div className="project-container">
+        <div className="content">
+          <div className="project-info">
+            <h3 className="text-2xl project-title uppercase">
               <span>
-                <a href="https://prompt-share-jz.vercel.app">PromptS</a>
+                <a target="_blank" href="https://prompt-share-jz.vercel.app">
+                  PromptS
+                </a>
               </span>
               <span>
-                <a href="https://prompt-share-jz.vercel.app">hare</a>
+                <a target="_blank" href="https://prompt-share-jz.vercel.app">
+                  hare
+                </a>
               </span>
             </h3>
             <div className="project-other">
@@ -165,20 +259,28 @@ function Projects({ section }: Props) {
                 A CRUD web application to share helpful prompts and obtian the
                 best responses from ai models such as chatgpt. It&apos;s built
                 with{" "}
-                <a href="https://react.dev/" className="link">
+                <a target="_blank" href="https://react.dev/" className="link">
                   react
                 </a>{" "}
                 &{" "}
-                <a href="https://nextjs.org/" className="link">
+                <a target="_blank" href="https://nextjs.org/" className="link">
                   next.js
                 </a>{" "}
                 and connects to a{" "}
-                <a href="https://www.mongodb.com/" className="link">
+                <a
+                  target="_blank"
+                  href="https://www.mongodb.com/"
+                  className="link"
+                >
                   mongodb
                 </a>{" "}
                 server to store user accounts and posts. The styling is done
                 with{" "}
-                <a href="https://tailwindcss.com/" className="link">
+                <a
+                  target="_blank"
+                  href="https://tailwindcss.com/"
+                  className="link"
+                >
                   Tailwind CSS
                 </a>
                 .
@@ -188,16 +290,17 @@ function Projects({ section }: Props) {
                   title="Live Demo"
                   textStyles="text-m"
                   handleClick={() =>
-                    (window.location.href =
-                      "https://prompt-share-jz.vercel.app")
+                    window.open("https://prompt-share-jz.vercel.app", "_blank")
                   }
                 />
                 <CustomButton
                   title="Github"
                   textStyles="text-m"
                   handleClick={() =>
-                    (window.location.href =
-                      "https://github.com/jasonzubiate/PromptShare")
+                    window.open(
+                      "https://github.com/jasonzubiate/PromptShare",
+                      "_blank"
+                    )
                   }
                 />
               </div>
@@ -218,20 +321,24 @@ function Projects({ section }: Props) {
           <div className="project-info">
             <h3 className="text-2xl project-title uppercase">
               <span>
-                <a href="https://car-showcase-jz.vercel.app/">Carshow</a>
+                <a target="_blank" href="https://car-showcase-jz.vercel.app/">
+                  Carshow
+                </a>
               </span>
               <span>
-                <a href="https://car-showcase-jz.vercel.app/">case</a>
+                <a target="_blank" href="https://car-showcase-jz.vercel.app/">
+                  case
+                </a>
               </span>
             </h3>
             <div className="project-other">
               <p className="text-m project-description uppercase">
                 A modern car rental platform built with{" "}
-                <a href="https://react.dev/" className="link">
+                <a target="_blank" href="https://react.dev/" className="link">
                   react
                 </a>{" "}
                 &{" "}
-                <a href="https://nextjs.org/" className="link">
+                <a target="_blank" href="https://nextjs.org/" className="link">
                   next.js
                 </a>{" "}
                 features inlcuding server-side rendering. It uses{" "}
@@ -242,7 +349,11 @@ function Projects({ section }: Props) {
                   rapid api
                 </a>{" "}
                 for fetching detailed car data and{" "}
-                <a href="https://tailwindcss.com/" className="link">
+                <a
+                  target="_blank"
+                  href="https://tailwindcss.com/"
+                  className="link"
+                >
                   Tailwind CSS
                 </a>{" "}
                 for styling.
@@ -252,16 +363,17 @@ function Projects({ section }: Props) {
                   title="Live Demo"
                   textStyles="text-m"
                   handleClick={() =>
-                    (window.location.href =
-                      "https://car-showcase-jz.vercel.app/")
+                    window.open("https://car-showcase-jz.vercel.app/", "_blank")
                   }
                 />
                 <CustomButton
                   title="Github"
                   textStyles="text-m"
                   handleClick={() =>
-                    (window.location.href =
-                      "https://github.com/jasonzubiate/car_showcase")
+                    window.open(
+                      "https://github.com/jasonzubiate/car_showcase",
+                      "_blank"
+                    )
                   }
                 />
               </div>
