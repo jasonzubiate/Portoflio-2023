@@ -7,7 +7,7 @@ import summarease from "@/public/assets/img/summarease.png";
 import demosdelivered from "@/public/assets/img/demosdelivered.png";
 import promptshare from "@/public/assets/img/promptshare.png";
 import carshowcase from "@/public/assets/img/carshowcase.png";
-
+ 
 import { SectionHeader, CustomButton } from ".";
 
 interface Props {
