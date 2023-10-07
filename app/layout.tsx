@@ -1,13 +1,10 @@
 import "@/styles/globals.css";
-import type { Metadata } from "next";
+import { constructMetaData } from "@/utils/metadata";
 import { Analytics } from '@vercel/analytics/react';
 
 import NavLayout from "@/components/NavLayout";
 
-export const metadata: Metadata = {
-  title: "Jason Zubiate 🤙",
-  description: "Perosnal portfolio made with Next.js",
-};
+export const metadata = constructMetaData()
 
 export default function RootLayout({
   children,
