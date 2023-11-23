@@ -116,7 +116,7 @@ export default function Page() {
                       selectedWork !== "labs" ? "opacity-20" : ""
                     }`}
                   >
-                    10
+                    5
                   </p>
                 </div>
               </button>

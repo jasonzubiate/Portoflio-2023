@@ -53,7 +53,7 @@ function Projects({ section }: Props) {
                 >
                   gsap
                 </a>{" "}
-                for animiations.
+                for animations.
               </p>
               <div className="btn-group">
                 <CustomButton
