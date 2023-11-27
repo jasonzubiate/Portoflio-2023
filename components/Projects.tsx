@@ -7,7 +7,7 @@ import summarease from "@/public/assets/img/summarease.png";
 import demosdelivered from "@/public/assets/img/demosdelivered.png";
 import promptshare from "@/public/assets/img/promptshare.png";
 import carshowcase from "@/public/assets/img/carshowcase.png";
- 
+
 import { SectionHeader, CustomButton } from ".";
 
 interface Props {
@@ -41,6 +41,7 @@ function Projects({ section }: Props) {
                 features such as custom{" "}
                 <a
                   href="https://legacy.reactjs.org/docs/hooks-custom.html"
+                  target="_blank"
                   className="link"
                 >
                   hooks
@@ -76,14 +77,18 @@ function Projects({ section }: Props) {
               </div>
             </div>
           </div>
-          <div className="project-img">
+          <a
+            className="project-img"
+            target="_blank"
+            href="https://jasonzubiate.com"
+          >
             <Image
               src={portfolio}
               alt="Portfolio Image"
               className="img"
               priority
             />
-          </div>
+          </a>
         </div>
       </div>
       <div className="project-container">
@@ -107,6 +112,7 @@ function Projects({ section }: Props) {
                 </a>{" "}
                 and{" "}
                 <a
+                  target="_blank"
                   href="https://rapidapi.com/restyler/api/article-extractor-and-summarizer?utm_source=youtube.com%2FJavaScriptMastery&utm_medium=referral&utm_campaign=DevRel"
                   className="link"
                 >
@@ -159,14 +165,18 @@ function Projects({ section }: Props) {
               </div>
             </div>
           </div>
-          <div className="project-img">
+          <a
+            className="project-img"
+            target="_blank"
+            href="https://summar-ease-jz.vercel.app/"
+          >
             <Image
               src={summarease}
               alt="summarease_img"
               className="img"
               priority
             />
-          </div>
+          </a>
         </div>
       </div>
       <div className="project-container">
@@ -229,14 +239,18 @@ function Projects({ section }: Props) {
               </div>
             </div>
           </div>
-          <div className="project-img">
+          <a
+            className="project-img"
+            target="_blank"
+            href="https://www.demosdelivered.live/"
+          >
             <Image
               src={demosdelivered}
               alt="demos_delivered"
               className="img"
               priority
             />
-          </div>
+          </a>
         </div>
       </div>
       <div className="project-container">
@@ -306,17 +320,21 @@ function Projects({ section }: Props) {
               </div>
             </div>
           </div>
-          <div className="project-img">
+          <a
+            className="project-img"
+            target="_blank"
+            href="https://prompt-share-jz.vercel.app"
+          >
             <Image
               src={promptshare}
               alt="Promptshare Image"
               className="img"
               priority
             />
-          </div>
+          </a>
         </div>
       </div>
-      <div className="project-container">
+      {/* <div className="project-container">
         <div className="content">
           <div className="project-info">
             <h3 className="text-2xl project-title uppercase">
@@ -388,7 +406,7 @@ function Projects({ section }: Props) {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
