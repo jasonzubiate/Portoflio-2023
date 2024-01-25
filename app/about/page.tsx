@@ -50,7 +50,7 @@ export default function Page() {
       ".img",
       {
         clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-        duration: .8,
+        duration: 0.8,
         ease: "power3.in",
       },
       0.2
@@ -84,27 +84,21 @@ export default function Page() {
           <div className="bio-container">
             <div className="hobbies">
               <div className="mask">
-                <h4 className="text-2xl uppercase t1">Passionate</h4>
-              </div>
-              <div className="mask">
-                <h4 className="text-2xl uppercase t2">Frontend</h4>
-              </div>
-              <div className="mask">
-                <h4 className="text-2xl uppercase t3">Engineer</h4>
+                <h4 className="text-2xl uppercase t1">What's Up</h4>
               </div>
               <Image className="img" src={desk} alt="Producing" priority />
               <div className="mask">
-                <h4 className="text-2xl uppercase t4">Based in</h4>
+                <h4 className="text-2xl uppercase t4">Check Me</h4>
               </div>
               <div className="mask">
-                <h4 className="text-2xl uppercase t5">Los Angeles</h4>
+                <h4 className="text-2xl uppercase t5">Out</h4>
               </div>
             </div>
             <div className="bio-bottom">
               <h4 className="text-m tagline">A journey of lifelong learning</h4>
               <div className="bio">
                 <p className="text-m">
-                  I am a frontend engineer with over two years of experience
+                  I am a software engineer with over two years of experience
                   with React and Next.js. I have collaborated with teams to
                   bring web and mobile applications to life. I also have had the
                   chance to work with users through usability testing cohorts to

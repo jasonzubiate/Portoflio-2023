@@ -40,7 +40,7 @@ function Hero() {
       "<"
     );
     tl.from(
-      ".frontend .char",
+      ".position .char",
       {
         duration: 0.8,
         yPercent: 100,
@@ -95,7 +95,7 @@ function Hero() {
       <div className="hero-header uppercase">
         <p className="text-m">Creative</p>
         <div className="mask">
-          <h2 className="text-4xl role frontend">Frontend</h2>
+          <h2 className="text-4xl role position">Full Stack</h2>
         </div>
         <div className="mask">
           <h2 className="text-4xl role engineer">Engineer</h2>

@@ -69,11 +69,8 @@ export default function Page() {
               >
                 Github
               </a>
-              <a
-                className="text-2xl link"
-                href="https://dribbble.com/jasonzubiate"
-              >
-                Dribbble
+              <a className="text-2xl link" href="https://spinnin.studio">
+                Spinnin
               </a>
             </div>
           </div>

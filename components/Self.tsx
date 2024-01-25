@@ -13,17 +13,15 @@ function Self({ section }: Props) {
       <div className="content">
         <div className="bio-top">
           <p className="text-l uppercase">
-            I immerse myself in the ever-changing world of web technologies.
-            Eagerly dwelling at the crossroads of innovation and user-center
-            design.
+            Let&apos;s keep it short and sweet. I enjoy creating things.
           </p>
           <p className="text-l uppercase">
-            When I&apos;m not creating. I am producing, visiting the beach, or having
-            a fun night out with friends.
+            When I&apos;m not creating. I am producing, visiting the beach, or
+            having a fun night out with friends.
           </p>
         </div>
         <div className="bio-bottom">
-          <h4 className="text-xl tagline uppercase">More than just code</h4>
+          <h4 className="text-xl tagline uppercase">So Why Me?</h4>
           <div className="bio">
             <p className="text-m">
               With a strong background in UX design, I bring a unique
@@ -38,7 +36,9 @@ function Self({ section }: Props) {
               integration of frontend elements with back-end systems and
               functionalities.
             </p>
-            <Link href="/about" className="text-m basic-link">More about me</Link>
+            <Link href="/about" className="text-m basic-link">
+              More about me
+            </Link>
           </div>
         </div>
       </div>

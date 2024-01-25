@@ -25,7 +25,7 @@ function Skills({ section }: Props) {
               </label>
               <p className="text-m skill-list">
                 Typescript, javascript, html, css, jsx/tsx, tailwind, SASS,
-                python, jQuery
+                python
               </p>
             </div>
             <div className="skill">
@@ -33,8 +33,8 @@ function Skills({ section }: Props) {
                 Software
               </label>
               <p className="text-m skill-list">
-                React, react native, next.js, angular, redux, jest, cypress, gsap,
-                redux, recoil, figma, miro, vercel, testflight
+                React, react native, next.js, prisma, redux, jest, gsap, redux,
+                framer motion, mongodb, figma, vercel, testflight
               </p>
             </div>
             <div className="skill">
