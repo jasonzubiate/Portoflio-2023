@@ -84,7 +84,7 @@ export default function Page() {
           <div className="bio-container">
             <div className="hobbies">
               <div className="mask">
-                <h4 className="text-2xl uppercase t1">What's Up</h4>
+                <h4 className="text-2xl uppercase t1">What&apos;s Up</h4>
               </div>
               <Image className="img" src={desk} alt="Producing" priority />
               <div className="mask">
@@ -98,7 +98,7 @@ export default function Page() {
               <h4 className="text-m tagline">A journey of lifelong learning</h4>
               <div className="bio">
                 <p className="text-m">
-                  I am a software engineer with over two years of experience
+                  I&apos;m a software engineer with over two years of experience
                   with React and Next.js. I have collaborated with teams to
                   bring web and mobile applications to life. I also have had the
                   chance to work with users through usability testing cohorts to
