@@ -183,9 +183,8 @@ function Projects({ section }: Props) {
         <div className="content">
           <div className="project-info">
             <h3 className="text-2xl project-title uppercase">
-              <a target="_blank" href="https://www.demosdelivered.live/">
-                Demos <br />
-                Delivered
+              <a target="_blank" href="https://www.delivrd.live/">
+                Delivrd
               </a>
             </h3>
             <div className="project-other">
@@ -223,7 +222,7 @@ function Projects({ section }: Props) {
                   title="Live Demo"
                   textStyles="text-m"
                   handleClick={() =>
-                    window.open("https://www.demosdelivered.live/", "_blank")
+                    window.open("https://www.delivrd.live/", "_blank")
                   }
                 />
                 <CustomButton
@@ -231,7 +230,7 @@ function Projects({ section }: Props) {
                   textStyles="text-m"
                   handleClick={() =>
                     window.open(
-                      "https://github.com/jasonzubiate/Demos-Delivered",
+                      "https://github.com/jasonzubiate/delivrd",
                       "_blank"
                     )
                   }
